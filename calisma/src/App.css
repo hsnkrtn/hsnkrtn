@@ -1745,7 +1745,9 @@ height: 200px;
 .ResimSlider h1 {
   padding: 10px;
 }
-
+.Home{
+  height: 2050px;
+}
 }
 
 @media only screen and (min-width: 600px) {
