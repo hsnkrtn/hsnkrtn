@@ -91,7 +91,7 @@ class Duyurular extends Component {
                             });
                           }}
                           to={{
-                            pathname: `/GenelTanitim/Duyurular/${GosterilecekDuyurular.id} `,
+                            pathname: `/DuyuruSayfası/Duyurular/${GosterilecekDuyurular.id} `,
                             state: {
                               Baslik: this.state.Baslik,
                               Detay: this.state.Detay,

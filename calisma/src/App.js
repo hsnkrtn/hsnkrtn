@@ -9,6 +9,7 @@ import Yonetim from "./component/Yonetim";
 import Bolumler from "./component/Bolumler"; 
 import Doktorlar from "./component/Doktorlar"; 
 import HaberSayfası from "./component/HaberSayfası"; 
+import DuyuruSayfası from "./component/DuyuruSayfası"; 
 
 class App extends Component {
   render() {
@@ -34,6 +35,9 @@ class App extends Component {
             </Route>
             <Route path="/HaberSayfası/:Id">
               <HaberSayfası/>
+            </Route>
+            <Route path="/DuyuruSayfası/:Id">
+              <DuyuruSayfası/>
             </Route>
           </Switch>
           <Footer />
