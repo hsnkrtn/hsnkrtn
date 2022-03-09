@@ -12,7 +12,6 @@ function Doktorlar(props) {
   const Detay = Gelenveriler.Detay;
   const Doktorlar = Gelenveriler.Doktorlar;
 
-  console.log(Doktorlar);
 
   return (
     <div className="RouterSayfasi">

@@ -6,7 +6,6 @@ function Yonetim(props) {
   const Gelenveriler = location.state.Gonderilenveriler;
   const Baslik = location.state.Baslik;
   const BashekimKey =location.state.BashekimKey;
-  console.log(BashekimKey);
 
 useEffect(() => {
   window.scrollTo(0, 0);

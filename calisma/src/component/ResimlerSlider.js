@@ -6,12 +6,12 @@ function ResimlerSlider(props) {
   const [ResimNumarasi, setResimNumarasi] = useState(0);
 
   const Fotograflar = props.Fotograf;
-  console.log(Fotograflar);
 
-  const Foto= props.Fotograf;
+  const Baslik= props.Baslik;
 
   return (
     <div className="ResimSlider">
+      <h1>{Baslik} Fotografları</h1>
       <div className="HaberFotografi">
         <img src={Fotograflar[ResimNumarasi]}></img>
       </div>

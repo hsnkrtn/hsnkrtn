@@ -27,7 +27,7 @@ function HaberSayfası(props) {
           <p1> {Detay}</p1>
           <hr></hr>
        
-          <ResimlerSlider Fotograf={HaberFotograf} />
+          <ResimlerSlider Baslik="Haberin" Fotograf={HaberFotograf} />
    
         </section>
       
