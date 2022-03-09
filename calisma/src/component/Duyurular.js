@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { bga } from "./Helpers/AttachmentData";
 import DataConsumer from "../context";
+import { Link } from "react-router-dom";
+import { HastaneFotograflari } from "./Helpers/HastaneResimlerData";
 
 import "../App.css";
 
@@ -13,26 +15,24 @@ class Duyurular extends Component {
       UpbottonShow: false,
       DownbottonShow: true,
       ScrollValue: 0,
-      ScrollMoveValue:400,
-
+      ScrollMoveValue: 400,
+      GosterilecekDuyurular: [],
+      Baslik: "",
+      Detay: "",
+      Fotograf:"",
     };
-
   }
-  componentDidMount (){
+  componentDidMount() {
     let WindowWidth = window.innerWidth;
-if(WindowWidth<700){
-  this.setState ({
-    
-    ScrollMoveValue:345
-  })
-}
-else {
-  this.setState ({
-    
-    ScrollMoveValue:400
-  })
-}
-
+    if (WindowWidth < 700) {
+      this.setState({
+        ScrollMoveValue: 345,
+      });
+    } else {
+      this.setState({
+        ScrollMoveValue: 400,
+      });
+    }
   }
 
   slideDown = () => {
@@ -59,23 +59,14 @@ else {
     }
   };
 
-
-
-
-
-
-
-
-
-
-  
-
   render() {
+
+
     return (
       <DataConsumer>
         {(value) => {
-          let GosterilecekDuyurular = value.Duyurular;
-            
+          this.state.GosterilecekDuyurular = value.Duyurular;
+
           return (
             <div
               className=" bga "
@@ -83,32 +74,54 @@ else {
             >
               <a className=" DuyuruBuyukBaslik"> Duyurular </a>
 
-
               <div className="Duyuruslider">
-                <div className="duyurular" id="DuyuruSlider">
-                  {GosterilecekDuyurular.map((GosterilecekDuyurular, index) => {
-                    return (
-                      <div
-                        className="Duyuru"
-                        key={index}
-                        id={GosterilecekDuyurular.DuyuruId}
-                      >
-                        <div className="DuyuruIcon">
-                          <i class="fa  fa-envelope"></i>
-                        </div>
+                <ul className="duyurular" id="DuyuruSlider">
+                  {this.state.GosterilecekDuyurular.map(
+                    (GosterilecekDuyurular, index) => {
+                      return (
+                        <Link
+                          onMouseEnter={() => {
+                            this.setState({
+                              Baslik:
+                                this.state.GosterilecekDuyurular[index].Baslik,
+                              Detay:
+                                this.state.GosterilecekDuyurular[index].Detay,
+                                Fotograf:
+                                this.state.GosterilecekDuyurular[index].Fotograf,
+                            });
+                          }}
+                          to={{
+                            pathname: `/GenelTanitim/Duyurular/${GosterilecekDuyurular.id} `,
+                            state: {
+                              Baslik: this.state.Baslik,
+                              Detay: this.state.Detay,
+                              Fotograf:this.state.Fotograf,
+                            },
+                          }}
+                        >
+                          <li
+                            className="Duyuru"
+                            key={index}
+                            id={GosterilecekDuyurular.DuyuruId}
+                          >
+                            <div className="DuyuruIcon">
+                              <i class="fa  fa-envelope"></i>
+                            </div>
 
-                        <div className="DuyuruIcerik">
-                          <h1 className="DuyuruBaslik">
-                            {GosterilecekDuyurular.DuyuruBaslik}
-                          </h1>
-                          <div className="Dtarih">
-                            <p> {GosterilecekDuyurular.Dtarih} </p>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
+                            <div className="DuyuruIcerik">
+                              <h1 className="DuyuruBaslik">
+                                {GosterilecekDuyurular.Baslik}
+                              </h1>
+                              <div className="Dtarih">
+                                <p> {GosterilecekDuyurular.Dtarih} </p>
+                              </div>
+                            </div>
+                          </li>
+                        </Link>
+                      );
+                    }
+                  )}
+                </ul>
               </div>
               <div
                 className={

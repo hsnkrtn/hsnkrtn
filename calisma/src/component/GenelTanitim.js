@@ -8,11 +8,9 @@ function GenelTanitim(props) {
   const Baslik = location.state.Baslik;
   const Detay = location.state.Detay;
   const Fotograf =location.state.Fotograf;
-  console.log(Fotograf)
   useEffect(() => {
     window.scrollTo(0, 0);
   });
-console.log(Detay)
   return (
     <div className="RouterSayfasi">
       <div className="RouterSayfasiIcerik">

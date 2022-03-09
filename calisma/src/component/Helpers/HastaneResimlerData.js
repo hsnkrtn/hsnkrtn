@@ -16,38 +16,38 @@ export const  HastaneFotograflari = [
     },
     {
         title: " h",
-        a: hastane1,
+        Fotograf: hastane1,
 
     },
     {
         title: " h",
-        a: hastane2,
+        Fotograf: hastane2,
 
     },
     {
         title: " h",
-        a: hastane3,
+        Fotograf: hastane3,
 
     },
 
     {
         title: " h",
-        a: hastane4,
+        Fotograf: hastane4,
 
     },
     {
         title: " h",
-        a: hstn4,
+        Fotograf: hstn4,
 
     },
     {
         title: " h",
-        a: hastanedis,
+        Fotograf: hastanedis,
 
     },
     {
         title: " h",
-        a: hastanegiris1,
+        Fotograf: hastanegiris1,
 
     },
    

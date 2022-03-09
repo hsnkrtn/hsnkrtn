@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { HastaneFotograflari } from "./Helpers/HastaneResimlerData";
+import { HastaneFotograflari } from "./Helpers/HastaneResimlerData";  
 import DoktorlarCards from "../component/DoktorlarCards";
 
 function Doktorlar(props) {

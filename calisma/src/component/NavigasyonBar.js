@@ -55,7 +55,6 @@ class Navigasyonbar extends Component {
 
   render() {
     const logo = HastaneFotograflari[0].Logo;
-    console.log(this.state.Fotograf)
     return (
       <DataConsumer>
         {(value) => {
@@ -129,6 +128,7 @@ class Navigasyonbar extends Component {
                                   state: {
                                     Baslik: this.state.Baslik,
                                     Detay: this.state.Detay,
+                                   Fotograf: this.state.TanıtımListesi[index].Fotograf,
                                   },
                                 }}
                               >
