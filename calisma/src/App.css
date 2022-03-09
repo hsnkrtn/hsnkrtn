@@ -1643,7 +1643,7 @@ width: 100%;
   }
   .Duyuru {
     left: 50%;
-    margin-left: -175px;
+    margin-left: -190px;
     margin-bottom: 15px;
     margin-top: 15px;
     margin-right: 0px;
@@ -1745,6 +1745,7 @@ height: 200px;
 .ResimSlider h1 {
   padding: 10px;
 }
+
 }
 
 @media only screen and (min-width: 600px) {
