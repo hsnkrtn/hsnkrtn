@@ -32,7 +32,7 @@ useEffect(() => {
                   <h1 className= { BashekimKey ?  "BashekimSayfasiBilgilertitle": "title"}>
                     {Gelenveriler.unvan} {Gelenveriler.Adi}{" "}
                   </h1>
-                  <div className= { BashekimKey ?  "BashekimSayfasiBilgilertitle": "titlemetin"}>
+                  <div className= { BashekimKey ?  "BashekimSayfasiBilgilerDetay": "titlemetin"}>
                     <p1 > {Gelenveriler.Hakkinda} </p1>
                   </div>
                 </div>
