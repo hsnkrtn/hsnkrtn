@@ -3,9 +3,9 @@ import "../App.css";
 import { useState } from "react";
 
 function ResimlerSlider(props) {
-  const [ResimNumarasi, setResimNumarasi] = useState(0);
+  const [index, setindex] = useState(0);
 
-  const Fotograflar = props.Fotograf;
+  const Fotograflar =  props.Fotograf;
 
   const Baslik= props.Baslik;
 
@@ -13,7 +13,7 @@ function ResimlerSlider(props) {
     <div className="ResimSlider">
       <h1>{Baslik} Fotografları</h1>
       <div className="HaberFotografi">
-        <img src={Fotograflar[ResimNumarasi]}></img>
+        <img src={Fotograflar[index]}></img>
       </div>
 
       <div className="HrStyle" >
@@ -26,7 +26,7 @@ function ResimlerSlider(props) {
             return (
               <li
                 className="ResimSliderFotografCard "
-                onClick={() => setResimNumarasi(ResimNumarasi + 1)}
+                onClick={() => setindex(index)}
               >
                 <img src={Fotograf}></img>
               </li>

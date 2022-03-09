@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 function Yonetim(props) {
   const location = useLocation();
-  const Gelenveriler = location.state.Gonderilenveriler;
+  const Gelenveriler =  location.state.Gonderilenveriler;
   const Baslik = location.state.Baslik;
   const BashekimKey =location.state.BashekimKey;
 
