@@ -1,24 +1,23 @@
 import React from "react";
 import "../App.css";
-import { useState } from "react";
+import { useState,useEffect  } from "react";
 
 function ResimlerSlider(props) {
   const [index, setindex] = useState(0);
 
-  const Fotograflar =  props.Fotograf;
+  const Fotograflar = props.Fotograf;
 
-  const Baslik= props.Baslik;
-
+  const Baslik = props.Baslik;
+console.log(index)
   return (
     <div className="ResimSlider">
       <h1>{Baslik} Fotografları</h1>
-      <div className="HaberFotografi">
-        <img src={Fotograflar[index]}></img>
-      </div>
 
-      <div className="HrStyle" >
-        <hr></hr>{" "}
-      </div>
+
+      <div  className="HaberFotografi">
+        <object   className="HaberFotografi"  controls muted data={Fotograflar[index]}  ></object  >
+      </div >
+
 
       <div className="KucukFotograflar">
         <ul>
@@ -26,21 +25,15 @@ function ResimlerSlider(props) {
             return (
               <li
                 className="ResimSliderFotografCard "
-                onClick={() => setindex(index)}
+                onClick={() => setindex(index)  }
               >
-                <img src={Fotograf}></img>
+                <object controls muted data={Fotograflar[index]}></object>
               </li>
             );
           })}
         </ul>
       </div>
-
-
-  
-
-   
-      </div> 
-
+    </div>
   );
 }
 

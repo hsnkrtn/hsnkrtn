@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import hastane2 from "../src/component/Resimler/hastane2.jpg";
 import hastane4 from "../src/component/Resimler/hastane4.jpg";
+import oylesinevideo from "../src/component/Resimler/oylesinevideo.mp4";
+import oylesineikinci from "../src/component/Resimler/oylesineikinci.mp4";
 import fatihfirdolasfotografi from "../src/component/Resimler/KisiFotografları/fatihfirdolasfotografi.jpg";
 import ayhanakbalfotografi from "../src/component/Resimler/KisiFotografları/ayhanakbalfotografi.jpg";
 import aysealbayfotografi from "../src/component/Resimler/KisiFotografları/aysealbayfotografi.jpeg";
@@ -129,13 +131,6 @@ export class ContextProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      GenelTanitimVeriler: [
-        {
-          Baslik: " ",
-          Fotograf: "hbg5.jpg",
-          Detay: "",
-        },
-      ],
 
       Tanitim: [
         {
@@ -144,8 +139,7 @@ export class ContextProvider extends Component {
           Fotograf: "bga2.jpg ",
           Fotograf: hastane2,
           Detay:
-            "Fırat Üniversitesi Hastanesi, T.C. Sağlık Bakanlığı ile Üniversite Rektörlüğü arasında yapılan ve 24.12.1984 tarihinden itibaren yürürlüğe giren bir protokole binaen Elazığ doğumevinin üniversitemize devredilmesi ile Ocak1985 'ten itibaren faaliyetlerine başlamıştır. Önceleri adı F.Ü. Araştırma ve Uygulama Hastanesi iken 1997' de Senato kararıyla F.Ü. Fırat Tıp Merkezi olarak adlandırılmıştır. 2008 yılı içerisinde hastanenin ismi son kez “Fırat Üniversitesi Hastanesi” olarak değiştirilmiştir. Fırat Üniversitesi Hastanesi bugün üçüncü basamak sağlık hizmeti veren bölge hastanesi konumundadır. Hastanemiz; 1053 yatak kapasiteli 125000 metrekare kapalı alana sahip, 3 bloktan oluşmaktadır. P Blokta; İç Hastalıkları (Genel Dahiliye, Romatoloji, Nefroloji, Hematoloji, Endokrinoloji, Gastoroentoroloji, Onkoloji Bilim Dalı), Dermatoloji, Enfeksiyon Hastalıkları, Kardiyoloji, Koroner Anjiografi ve Koroner Yoğun Bakım, Fiziksel Tıp ve Rehabilitasyon, Çocuk Sağlığı ve Hastalıkları (Allerji, Endokrinoloji, Gastroentroloji, Hematoloji, Kardiyoloji, Nöroloji, Yeni Doğan, Nefroloji, Beslenme ve Metabolizma, Enfeksiyon Bilim Dalı), Nöroloji, Halk Sağlığı, Aile Hekimliği, Psikiyatri, Göğüs Hastalıkları, Genel Cerrahi, Göz Hastalıkları, Kulak-Burun-Boğaz Hastalıkları, Kadın Hastalıkları ve Doğum, Ortopedi ve Travmatoloji, Üroloji, Nöroşirürji, Kalp ve Damar Cerrahisi, Göğüs Cerrahisi, Anestezi ve Reanimasyon, Çocuk Cerrahisi, Plastik ve Rekonstrüktif Cerrahi, Algoloji, Ruh Sağlığı, Yeni Doğan Yoğun Bakım Ünitesi, Çocuk Yoğun Bakım Ünitesi, Yara ve Yanık Merkezi, Uyku Bozuklukları Tedavi Ünitesi, Total Parenteral Beslenme Ünitesi (TPN) birimler ve klinikler hizmet vermektedir. O Blokta; Poliklinikler, Hemodiyaliz, Radyasyon Onkolojisi, Onkoloji Gündüz Tedavi Ünitesi, Ameliyathane, Merkez Laboratuvarı, Öğretim Üyeleri Odaları, İdari Birimler, Radyoloji, Nükleer Tıp, Genetik, G.E.T.A.T (Geleneksel ve Tamamlayıcı Tıp),Arşiv hizmet vermektedir. ",
-        },
+            "Fırat Üniversitesi Hastanesi, T.C. Sağlık Bakanlığı ile Üniversite Rektörlüğü arasında yapılan ve 24.12.1984 tarihinden itibaren yürürlüğe giren bir protokole binaen Elazığ doğumevinin üniversitemize devredilmesi ile Ocak1985 'ten itibaren faaliyetlerine başlamıştır. Önceleri adı F.Ü. Araştırma ve Uygulama Hastanesi iken 1997' de Senato kararıyla F.Ü. Fırat Tıp Merkezi olarak adlandırılmıştır. 2008 yılı içerisinde hastanenin ismi son kez “Fırat Üniversitesi Hastanesi” olarak değiştirilmiştir. Fırat Üniversitesi Hastanesi bugün üçüncü basamak sağlık hizmeti veren bölge hastanesi konumundadır. Hastanemiz; 1053 yatak kapasiteli 125000 metrekare kapalı alana sahip, 3 bloktan oluşmaktadır. P Blokta; İç Hastalıkları (Genel Dahiliye, Romatoloji, Nefroloji, Hematoloji, Endokrinoloji, Gastoroentoroloji, Onkoloji Bilim Dalı), Dermatoloji, Enfeksiyon Hastalıkları, Kardiyoloji, Koroner Anjiografi ve Koroner Yoğun Bakım, Fiziksel Tıp ve Rehabilitasyon, Çocuk Sağlığı ve Hastalıkları (Allerji, Endokrinoloji, Gastroentroloji, Hematoloji, Kardiyoloji, Nöroloji, Yeni Doğan, Nefroloji, Beslenme ve Metabolizma, Enfeksiyon Bilim Dalı), Nöroloji, Halk Sağlığı, Aile Hekimliği, Psikiyatri, Göğüs Hastalıkları, Genel Cerrahi, Göz Hastalıkları, Kulak-Burun-Boğaz Hastalıkları, Kadın Hastalıkları ve Doğum, Ortopedi ve Travmatoloji, Üroloji, Nöroşirürji, Kalp ve Damar Cerrahisi, Göğüs Cerrahisi, Anestezi ve Reanimasyon, Çocuk Cerrahisi, Plastik ve Rekonstrüktif Cerrahi, Algoloji, Ruh Sağlığı, Yeni Doğan Yoğun Bakım Ünitesi, Çocuk Yoğun Bakım Ünitesi, Yara ve Yanık Merkezi, Uyku Bozuklukları Tedavi Ünitesi, Total Parenteral Beslenme Ünitesi (TPN) birimler ve klinikler hizmet vermektedir. O Blokta; Poliklinikler, Hemodiyaliz, Radyasyon Onkolojisi, Onkoloji Gündüz Tedavi Ünitesi, Ameliyathane, Merkez Laboratuvarı, Öğretim Üyeleri Odaları, İdari Birimler, Radyoloji, Nükleer Tıp, Genetik, G.E.T.A.T (Geleneksel ve Tamamlayıcı Tıp),Arşiv hizmet vermektedir.S Blokta; Acil, Adli Tıp, Yoğun Bakımlar, Patoloji, Eczane, Kan Merkezi, Tüp Bebek, Doğumhane, Bilgi İşlem ve Teknik Birim hizmet vermektedir." },
         {
           id: "2",
           Baslik: "Genel Tanıtım",
@@ -185,14 +179,14 @@ export class ContextProvider extends Component {
           Baslik: "Misyon Ve Vizyon",
           Fotograf: hstn4,
           Detay:
-            "Misyonumuz: İnsanların temel hak ve özgürlükleri arasında yer alan sağlık hizmetlerini; etik ilkeler çerçevesinde, kaliteli, özgün, güvenilir ve evrensel değerler ölçeğinde, bilgi ve beceri ile donatılmış alanında uzman kadromuz ile ileri bilim ve teknoloji kaynaklarını etkin kullanarak nitelikli bir şekilde vermek ve hasta, hasta yakını ve çalışan memnuniyetini en üst seviyeye çıkarmaktır. <br></br> Vizyonumuz: Kaliteli hizmet anlayışını, güveni, hasta mahremiyetini ve memnuniyetini ilke edinmiş, ileri teknoloji ile donatılmış, çalışanları ile ekip ruhunu oluşturan, kurumsal kimliği ön plana çıkaran, ulusal ve uluslararası alanda tıpta yaşanan gelişmeleri yakından takip eden, araştırmacı ve sorgulayıcı bir anlayışla dünya standartlarında kaliteli sağlık hizmeti sunmak.",
+            "Misyonumuz: İnsanların temel hak ve özgürlükleri arasında yer alan sağlık hizmetlerini; etik ilkeler çerçevesinde, kaliteli, özgün, güvenilir ve evrensel değerler ölçeğinde, bilgi ve beceri ile donatılmış alanında uzman kadromuz ile ileri bilim ve teknoloji kaynaklarını etkin kullanarak nitelikli bir şekilde vermek ve hasta, hasta yakını ve çalışan memnuniyetini en üst seviyeye çıkarmaktır. Vizyonumuz: Kaliteli hizmet anlayışını, güveni, hasta mahremiyetini ve memnuniyetini ilke edinmiş, ileri teknoloji ile donatılmış, çalışanları ile ekip ruhunu oluşturan, kurumsal kimliği ön plana çıkaran, ulusal ve uluslararası alanda tıpta yaşanan gelişmeleri yakından takip eden, araştırmacı ve sorgulayıcı bir anlayışla dünya standartlarında kaliteli sağlık hizmeti sunmak.",
         },
         {
           id: "3",
           Baslik: "Değerlerimiz",
 
           Detay:
-            "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
+            "Sağlık Hizmeti sunumunda insan odaklılık anlayışıyla hareket eden Fırat Üniversitesi Hastanesinin temel değerleri: Kaliteli hizmet anlayışını hedef edinerek, hizmet kalitesini en üst seviyeye taşımak. Ekosisteme saygılı, çevre bilincinde ve çevreye duyarlı olmak. Bilimsel araştırmalara, araştırmacı, sorgulayıcı, yenilikçi, katılımcı ekip ruhuna önem vermek ve etik kurallara bağlı olmak. Güleryüz, hakkaniyet, şeffaflık, evrensellik, hesap verilebilirlik, insan hatasını en aza indirmek. İnsan ayrımcılığı yapmamak, ticari kaygılar taşımamak.   ",
           Fotograf: hstn4,
         },
         {
@@ -1574,7 +1568,7 @@ export class ContextProvider extends Component {
         },
         {
           HaberId: 9,
-          Fotograf: [hstn3, hstn4],
+          Fotograf: [hstn3, oylesinevideo, oylesineikinci,hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: " detay9 ",

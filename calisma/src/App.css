@@ -543,17 +543,20 @@ a:hover {
   background: #850432; 
 
 }
+
 .HaberFotografi {
   display: flex;
   height: 600px;
   align-items: center;
+  overflow:hidden;
 }
 
-.HaberFotografi img {
+.HaberFotografi object {
   height: 100%;
   width: 100%;
   border-radius: 10px;
 }
+
 
 .KucukFotograflar {
   position: relative;
@@ -585,7 +588,7 @@ a:hover {
   border: 3px solid #4f647f;
 
 }
-.ResimSliderFotografCard img {
+.ResimSliderFotografCard object  {
   width: fit-content;
   height: 200px;
   background-position: center;
@@ -593,6 +596,7 @@ a:hover {
   background-size: cover;
   padding: 5px;
   border-radius: 10px;
+cursor: pointer;
 }
 
 .ResimSliderLeftButton {
