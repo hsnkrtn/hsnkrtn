@@ -1561,7 +1561,7 @@ export class ContextProvider extends Component {
         },
         {
           HaberId: 8,
-          Fotograf: [hstn4,oylesinevideo,oylesineikinci],
+          Fotograf: [hstn4,],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy8",
@@ -1569,7 +1569,7 @@ export class ContextProvider extends Component {
         {
           
           HaberId: 9,
-          Fotograf: [hstn3, oylesinevideo,oylesineikinci,hstn4],
+          Fotograf: [hstn3,hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: " detay9 ",

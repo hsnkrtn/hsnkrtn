@@ -539,19 +539,14 @@ a:hover {
   background: #850432;
 }
 
-.HaberFotografi {
+.MediaSliderImage {
   display: flex;
   height: 600px;
   align-items: center;
   overflow: hidden;
 }
 
-.HaberFotografi video {
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-}
-.HaberFotografi object {
+.MediaSliderImage img {
   height: 100%;
   width: 100%;
   border-radius: 10px;
@@ -582,7 +577,7 @@ margin: 0px;
 }
 
 
-.ResimSliderFotografCard object {
+.ResimSliderFotografCard img {
   width: fit-content;
   height: 100px;
   background-position: center;
@@ -593,7 +588,7 @@ margin: 0px;
   border: 3px solid transparent;
 
 }
-.KucukFotograflar object:hover {
+.KucukFotograflar img:hover {
   border: 3px solid #4f647f;
   
 
