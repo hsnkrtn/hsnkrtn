@@ -19,12 +19,12 @@ function ResimlerSlider(props) {
 
       <div className="HaberFotografi">
 
-        <video className="videodurlo"
+        <video className="MediaSliderVideo"
         controls
         muted
           src={Fotograflar[DataNumber]}
         ></video>
-        <img className="resimdirlo"
+        <img className="MediaSliderImage"
   
           src={Fotograflar[DataNumber]}
         ></img>
@@ -41,7 +41,8 @@ function ResimlerSlider(props) {
                 className="ResimSliderFotografCard "
                 onClick={() => setDataNumber(index)}
               >
-                <img src={Fotograflar[index]}></img>
+                <img  className="MediaSliderImage" src={Fotograflar[index]}></img>
+                <video  className="MediaSliderVideo" src={Fotograflar[index]}></video>
               </li>
             );
           })}

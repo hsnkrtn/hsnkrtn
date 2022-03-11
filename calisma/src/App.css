@@ -580,7 +580,10 @@ margin: 0px;
   align-items: center;
   cursor: pointer;
 }
-.videodurlo {
+.MediaSliderVideo {
+  display: flex;
+}
+.MediaSliderImage {
   display: none;
 }
 
@@ -596,6 +599,22 @@ margin: 0px;
 
 }
 .KucukFotograflar img:hover {
+  border: 3px solid #4f647f;
+  
+
+}
+.ResimSliderFotografCard video {
+  width: fit-content;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 3px solid transparent;
+
+}
+.KucukFotograflar video:hover {
   border: 3px solid #4f647f;
   
 
