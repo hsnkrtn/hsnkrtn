@@ -3,46 +3,40 @@ import { useState, useEffect } from "react";
 
 function ResimlerSlider(props) {
   const [DataNumber, setDataNumber] = useState(0);
+  const [index, setindex] = useState();
 
   const Fotograflar = props.Fotograf;
 
   const Baslik = props.Baslik;
 
-  useEffect(() => {});
+  useEffect(() => {
+    setDataNumber(index)
+
+
+
+  });
 
   console.log(DataNumber);
 
-  
   return (
     <div className="ResimSlider">
       <h1>{Baslik} Fotografları</h1>
 
       <div className="HaberFotografi">
 
-        <video className="MediaSliderVideo"
-        controls
-        muted
-          src={Fotograflar[DataNumber]}
-        ></video>
-        <img className="MediaSliderImage"
-  
-          src={Fotograflar[DataNumber]}
-        ></img>
-
-
+        <object className="MediaSliderImage" data={Fotograflar[DataNumber]}></object>
       </div>
       <hr></hr>
 
-      <div className="KucukFotograflar"> 
+      <div className="KucukFotograflar">
         <ul>
           {Fotograflar.map((Fotograf, index) => {
             return (
-              <li
-                className="ResimSliderFotografCard "
-                onClick={() => setDataNumber(index)}
-              >
-                <img  className="MediaSliderImage" src={Fotograflar[index]}></img>
-                <video  className="MediaSliderVideo" src={Fotograflar[index]}></video>
+              <li className="ResimSliderFotografCard ">
+                <object 
+                  onClick={() => setDataNumber(index)}
+                  data={Fotograflar[index]}
+                ></object>
               </li>
             );
           })}
