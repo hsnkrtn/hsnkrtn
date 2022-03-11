@@ -1561,21 +1561,22 @@ export class ContextProvider extends Component {
         },
         {
           HaberId: 8,
-          Fotograf: [hstn3, hstn4],
+          Fotograf: [hstn4,oylesinevideo,oylesineikinci],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: "Detayy8",
         },
         {
+          
           HaberId: 9,
-          Fotograf: [hstn3, oylesinevideo, oylesineikinci,hstn4],
+          Fotograf: [hstn3, oylesinevideo,oylesineikinci,hstn4],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi: " detay9 ",
         },
         {
           HaberId: 10,
-          Fotograf: [hstn3, hstn4, hstn3, hstn4, hstn3, hstn4, hstn3],
+          Fotograf: [hstn3, hstn4, hstn3, hstn4, hstn3],
           HaberBasligi:
             " Firat Universitesi Hastaneshaberleri burada gösterilecek Firat Universitesi Hastanesi3",
           HaberDetayi:

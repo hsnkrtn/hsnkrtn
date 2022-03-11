@@ -114,11 +114,9 @@ a:hover {
   display: flex;
   position: relative;
   height: fit-content;
-  width:100%;
-
-  
+  width: 100%;
 }
-.RouterSayfasiDetay img{
+.RouterSayfasiDetay img {
   border-radius: 10px;
 }
 
@@ -213,7 +211,7 @@ a:hover {
   line-height: 1;
 }
 .BashekimSayfasiBilgilerDetay {
-  font-size:16px ;
+  font-size: 16px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -523,40 +521,41 @@ a:hover {
   border-radius: 10px;
 }
 
-
 .KucukFotograflar ul::-webkit-scrollbar {
-  width:5px;
+  width: 5px;
 }
 
 .KucukFotograflar ul::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
 
   border-radius: 10px;
 }
 
 .KucukFotograflar ul::-webkit-scrollbar-thumb {
-  background: #4f647f; 
+  background: #4f647f;
   border-radius: 10px;
 }
-.KucukFotograflar ul::-webkit-scrollbar-thumb:hover{
-
-  background: #850432; 
-
+.KucukFotograflar ul::-webkit-scrollbar-thumb:hover {
+  background: #850432;
 }
 
 .HaberFotografi {
   display: flex;
   height: 600px;
   align-items: center;
-  overflow:hidden;
+  overflow: hidden;
 }
 
-.HaberFotografi object {
+.HaberFotografi video {
   height: 100%;
   width: 100%;
   border-radius: 10px;
 }
-
+.HaberFotografi img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
 
 .KucukFotograflar {
   position: relative;
@@ -565,38 +564,41 @@ a:hover {
 .KucukFotograflar ul {
   position: relative;
   list-style: none;
-  min-height: 300px;
-  height: 300px;
+  min-height: 150px;
+  height: 150px;
   display: flex;
   overflow-x: scroll;
   width: 100%;
+  padding: 0px;
+margin: 0px;
 }
 
 .KucukFotograflar li {
   position: relative;
-  margin: 20px;
-  transition: all 0.5s ease-out;
+  margin: 10px;
   display: flex;
   align-items: center;
   cursor: pointer;
-
+}
+.videodurlo {
+  display: none;
 }
 
-.KucukFotograflar li:hover {
-  transition: all 0.5s ease-out;
-  transform: scale(1.1);
-  border: 3px solid #4f647f;
-
-}
-.ResimSliderFotografCard object  {
+.ResimSliderFotografCard img {
   width: fit-content;
-  height: 200px;
+  height: 100px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5px;
   border-radius: 10px;
-cursor: pointer;
+  cursor: pointer;
+  border: 3px solid transparent;
+
+}
+.KucukFotograflar img:hover {
+  border: 3px solid #4f647f;
+  
+
 }
 
 .ResimSliderLeftButton {
@@ -616,13 +618,11 @@ cursor: pointer;
   padding: 20px;
 }
 
-
-
 .kucukfotograf img {
   position: relative;
   padding: 10px;
-width: 200px;
-height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .carousel {
@@ -1034,9 +1034,8 @@ height: 200px;
   border-top: white solid 1px;
   align-items: center;
 }
-.DuyuruRouterSayfasiFotograf{
-width: 100%;
-
+.DuyuruRouterSayfasiFotograf {
+  width: 100%;
 }
 .Duyuruslider {
   position: absolute;
@@ -1431,8 +1430,7 @@ width: 100%;
     height: fit-content;
     min-height: 300px;
     margin-left: 0px;
-  overflow-y: scroll;
-  
+    overflow-y: scroll;
   }
   #Bolumlistelerinigoster li {
     height: 50px;
@@ -1715,41 +1713,36 @@ width: 100%;
     height: 500px;
   }
 
-
-  .RouterSayfasi{
-width: 100%
-
-  }
-  .RouterSayfasi h1{
-font-size: 20px;
-  }
-  .RouterSayfasi p1{
-    font-size: 15px;
-  }
-  .RouterSayfasiIcerik{
+  .RouterSayfasi {
     width: 100%;
   }
-  .HaberFotografi{
-height: fit-content;
-min-height: 200px;
-width: 100%;
-
+  .RouterSayfasi h1 {
+    font-size: 20px;
   }
-  .KucukFotograflar ul{
-min-height: 200px;
-height: 200px;
-
+  .RouterSayfasi p1 {
+    font-size: 15px;
   }
-  .ResimSliderFotografCard img{
+  .RouterSayfasiIcerik {
+    width: 100%;
+  }
+  .HaberFotografi {
+    height: fit-content;
+    min-height: 200px;
+    width: 100%;
+  }
+  .KucukFotograflar ul {
+    min-height: 200px;
+    height: 200px;
+  }
+  .ResimSliderFotografCard img {
     height: 100px;
   }
-.ResimSlider h1 {
-  padding: 10px;
-}
-.Home{
-  height: 2050px;
-}
-
+  .ResimSlider h1 {
+    padding: 10px;
+  }
+  .Home {
+    height: 2050px;
+  }
 }
 
 @media only screen and (min-width: 600px) {

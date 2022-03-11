@@ -1,33 +1,47 @@
-import React from "react";
 import "../App.css";
-import { useState,useEffect  } from "react";
+import { useState, useEffect } from "react";
 
 function ResimlerSlider(props) {
-  const [index, setindex] = useState(0);
+  const [DataNumber, setDataNumber] = useState(0);
 
   const Fotograflar = props.Fotograf;
 
   const Baslik = props.Baslik;
-console.log(index)
+
+  useEffect(() => {});
+
+  console.log(DataNumber);
+
+  
   return (
     <div className="ResimSlider">
       <h1>{Baslik} Fotografları</h1>
 
+      <div className="HaberFotografi">
 
-      <div  className="HaberFotografi">
-        <object   className="HaberFotografi"  controls muted data={Fotograflar[index]}  ></object  >
-      </div >
+        <video className="videodurlo"
+        controls
+        muted
+          src={Fotograflar[DataNumber]}
+        ></video>
+        <img className="resimdirlo"
+  
+          src={Fotograflar[DataNumber]}
+        ></img>
 
 
-      <div className="KucukFotograflar">
+      </div>
+      <hr></hr>
+
+      <div className="KucukFotograflar"> 
         <ul>
           {Fotograflar.map((Fotograf, index) => {
             return (
               <li
                 className="ResimSliderFotografCard "
-                onClick={() => setindex(index)  }
+                onClick={() => setDataNumber(index)}
               >
-                <object controls muted data={Fotograflar[index]}></object>
+                <img src={Fotograflar[index]}></img>
               </li>
             );
           })}
