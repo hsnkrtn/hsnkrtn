@@ -167,12 +167,9 @@ a:hover {
 }
 .BashekimSayfasi {
   position: relative;
-  border-radius: 16px;
   margin: 0px;
   width: 100%;
   min-height: 500px;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.3),
-    0px 5px 8px 0px rgba(0, 0, 0, 0.3), 0px 1px 14px 0px rgba(0, 0, 0, 0.3);
   overflow: visible;
   background-size: cover;
   margin: 20px;
@@ -183,12 +180,12 @@ a:hover {
 }
 .BashekimSayfasiBilgiler {
   position: relative;
-  top: 100px;
-  border-radius: 5px;
+ top: 50px;
+  border-radius: 0px 0px 5px 5px;
   width: 100%;
   min-height: 500px;
   height: fit-content;
-  background-color: rgb(250, 250, 250, 0.9);
+  background-color: rgb(250, 250, 250, 1);
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.3),
     0px 5px 8px 0px rgba(0, 0, 0, 0.3), 0px 1px 14px 0px rgba(0, 0, 0, 0.3);
   transform: translateY(100%) translateY(-70px) translateZ(0);
@@ -570,12 +567,20 @@ margin: 0px;
 
 .KucukFotograflar li {
   position: relative;
+  width: fit-content;
+  height: 100px;
   margin: 10px;
   display: flex;
   align-items: center;
   cursor: pointer;
-}
+  border: 3px solid transparent;
+  border-radius: 10px;
 
+}
+.KucukFotograflar li:hover{
+  border: 3px solid #4f647f;
+
+}
 
 .ResimSliderFotografCard img {
   width: fit-content;
@@ -585,16 +590,12 @@ margin: 0px;
   background-size: cover;
   border-radius: 10px;
   cursor: pointer;
-  border: 3px solid transparent;
+
 
 }
-.KucukFotograflar img:hover {
-  border: 3px solid #4f647f;
-  
-
+.ResimSliderFotografCard img:hover{
+  opacity: 0.3;
 }
-
-
 .ResimSliderLeftButton {
   font-size: 100px;
   color: #850432;
