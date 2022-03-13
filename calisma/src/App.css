@@ -79,18 +79,7 @@ a:hover {
   transition: all 0.2s ease-in-out;
   box-shadow: inset 2px 50px 100px #4f647f;
 }
-.Shadow {
-  position: fixed;
-  z-index: 2;
-  transition: all 0.5s ease-in-out;
-  width: 2000px;
-  height: 200px;
-  box-shadow: inset 2px 90px 100px #4f647f;
-  left: 50%;
-  margin-left: -1000px;
-  top: 0px;
-  display: flex;
-}
+
 .RouterSayfasi {
   margin-top: 90px;
   min-height: 200px;
@@ -484,7 +473,7 @@ margin: 35px;
   height: 500px;
   width: 1150px;
 }
-.IletisimItemsIframe h {
+.IletisiItemsIframe h {
   font-weight: bold;
   font-size: 16px;
 }
@@ -1286,10 +1275,7 @@ margin: 0px;
 
 /*  Mobil */
 @media only screen and (max-width: 1600px) {
-  .Shadow {
-    width: 1600px;
-    margin-left: -800px;
-  }
+
   .NavigasyonBar {
     width: 1600px;
     margin-left: -800px;
@@ -1314,7 +1300,7 @@ margin: 0px;
     top: 440px;
   }
   .bga {
-    top: 1418px;
+    top: 1318px;
   }
   .search-box {
     left: 76%;
@@ -1324,6 +1310,15 @@ margin: 0px;
   }
   .HVE {
     top: 678px;
+  }
+  .Bolumler{
+margin-left: -650px;
+  }
+  .IletisimItemsIframe{
+    right: -50%;
+  }
+  .Home{
+    height: 2068px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1511,14 +1506,6 @@ margin: 0px;
     width: 100%;
     left: 0px;
     margin-left: 0px;
-  }
-  .Shadow {
-    margin-left: 0px;
-    left: 0px;
-    width: 100%;
-    position: fixed;
-    height: 120px;
-    box-shadow: inset 2px 30px 100px #4f647f;
   }
 
   .carousel {
