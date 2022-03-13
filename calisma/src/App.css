@@ -203,6 +203,9 @@ margin: 35px;
   transform: translateY(100%) translateY(-70px) translateZ(0);
   transition: transform 0.5s ease-out;
 }
+.infoyonetim h1 {
+  font-size: 24px;
+}
 .BashekimSayfasiBilgilertitle {
   position: relative;
   margin: 0;
@@ -524,6 +527,7 @@ margin: 35px;
   width: 3px;
 }
 
+
 .KucukFotograflar ul::-webkit-scrollbar-track {
   box-shadow: inset 0 0 3px grey;
 
@@ -572,7 +576,7 @@ margin: 0px;
 .KucukFotograflar li {
   position: relative;
   width: fit-content;
-  height: 100px;
+  height: fit-content;
   margin: 10px;
   display: flex;
   align-items: center;
@@ -1398,7 +1402,16 @@ margin: 0px;
     background: transparent;
     align-items: center;
   }
-
+  .MediaSliderImage{
+    height: 150px;
+  }
+.KucukFotograflar ul{
+  min-height: 100px;
+  height: 100px;
+}
+.ResimSliderFotografCard img{
+  height: 50px;
+}
   .Bolumler {
     position: absolute;
     left: 0px;
@@ -1729,13 +1742,8 @@ margin: 0px;
     min-height: 200px;
     width: 100%;
   }
-  .KucukFotograflar ul {
-    min-height: 200px;
-    height: 200px;
-  }
-  .ResimSliderFotografCard img {
-    height: 100px;
-  }
+
+
   .ResimSlider h1 {
     padding: 10px;
   }
