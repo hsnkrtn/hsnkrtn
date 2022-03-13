@@ -13,6 +13,8 @@ useEffect(() => {
   return (
     <div className="RouterSayfasi">
       <div className="RouterSayfasiIcerik">
+      <div className="RouterSayfasiDetay">
+
         <h1>{Baslik}</h1>
 
         <ul className="YonetimCards">
@@ -41,6 +43,8 @@ useEffect(() => {
           })}
         </ul>
       </div>
+      </div>
+      
     </div>
   );
 }
