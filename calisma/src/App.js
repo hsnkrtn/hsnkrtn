@@ -10,6 +10,8 @@ import Bolumler from "./component/Bolumler";
 import Doktorlar from "./component/Doktorlar"; 
 import HaberSayfası from "./component/HaberSayfası"; 
 import DuyuruSayfası from "./component/DuyuruSayfası"; 
+import GerekliDokumanlar from "./component/GerekliDokumanlar"; 
+import Covid19 from "./component/Covid19"; 
 
 class App extends Component {
   render() {
@@ -38,6 +40,12 @@ class App extends Component {
             </Route>
             <Route path="/DuyuruSayfası/:Id">
               <DuyuruSayfası/>
+            </Route>
+            <Route path="/GerekliDokumanlar">
+              <GerekliDokumanlar/>
+            </Route>
+            <Route path="/Covid19">
+              <Covid19/>
             </Route>
           </Switch>
           <Footer />
