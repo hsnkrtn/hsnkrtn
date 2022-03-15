@@ -94,7 +94,9 @@ class Navigasyonbar extends Component {
                 <ul className="LinksList">
                   <div
                     className="NavigasyonBarItemsStyle"
-               
+                    onMouseLeave={() => {
+                      this.setState({ showTanitimList: false });
+                    }}
                   >
                     <li
                       className="LinksListItem"
