@@ -86,13 +86,15 @@ class Navigasyonbar extends Component {
                   alt="Hastane Logo "
                 ></img>
               </Link>{" "}
-              <div className="Links" id={this.state.showLinks ? "hidden" : ""}>
+              <div className="Links" id={this.state.showLinks ? "hidden" : ""}  
+              onMouseLeave={ ()=> { 
+                this.setState({showLinks:false})
+              } }
+              >
                 <ul className="LinksList">
                   <div
-                    className="butonrengi"
-                    onMouseLeave={() => {
-                      this.setState({ showTanitimList: false });
-                    }}
+                    className="NavigasyonBarItemsStyle"
+               
                   >
                     <li
                       className="LinksListItem"
@@ -161,7 +163,7 @@ class Navigasyonbar extends Component {
                   </div>
 
                   <div
-                    className="butonrengi"
+                    className="NavigasyonBarItemsStyle"
                     onMouseLeave={() => {
                       this.setState({ showKurumsalList: false });
                     }}
@@ -236,7 +238,7 @@ class Navigasyonbar extends Component {
                   </div>
 
                   <div
-                    className="butonrengi"
+                    className="NavigasyonBarItemsStyle"
                     onMouseLeave={() => {
                       this.setState({ showYonetimList: false });
                     }}
@@ -315,7 +317,7 @@ class Navigasyonbar extends Component {
                   </div>
 
                   <div
-                    className="butonrengi"
+                    className="NavigasyonBarItemsStyle"
                     onMouseLeave={() => {
                       this.setState({ showBolumlerList: false });
                     }}
@@ -596,7 +598,7 @@ class Navigasyonbar extends Component {
                   </div>
 
                   <div
-                    className="butonrengi"
+                    className="NavigasyonBarItemsStyle"
                     onMouseLeave={() => {
                       this.setState({ showDoktorlarList: false });
                     }}
@@ -877,7 +879,7 @@ class Navigasyonbar extends Component {
                   </div>
 
                   <div
-                    className="butonrengi"
+                    className="NavigasyonBarItemsStyle"
                     onMouseLeave={() => {
                       this.setState({ showIletisimItems: false });
                     }}
