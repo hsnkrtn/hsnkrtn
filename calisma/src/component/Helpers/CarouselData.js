@@ -22,11 +22,7 @@ export const  images = [
 
     },
 
-    {
-        title: " h",
-        Resim: hastane4,
-
-    }
+ 
 
 ];
 export default {
