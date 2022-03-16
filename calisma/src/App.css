@@ -153,6 +153,7 @@ a:hover {
   padding: 0px;
   display: inline-block;
 }
+
 .BashekimSayfasi {
   position: relative;
   margin: 0px;
@@ -1729,8 +1730,20 @@ overflow: scroll;
   .cardyonetim {
     overflow: scroll;
     width: 100%;
+    min-height: 0px;
     height: 300px;
-    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    
+  }
+  .infoyonetim {
+    min-height: 300px;
+    transform: translateY(0%) translateY(240px) translateZ(0);
+  
+  }
+  .infoyonetim h1 {
+    font-size: 18px;
   }
   .BashekimSayfasi {
     position: relative;

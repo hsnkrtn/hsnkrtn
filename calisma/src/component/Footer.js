@@ -79,8 +79,11 @@ class Footer extends Component {
                 {" "}
                 <li>Beslenme Hizmetleri </li>
               </a>
+              <a href="https://obs.saglik.gov.tr/Account/Login" target="_blank">
+                {" "}
+                <li>Ölüm Bildirim Sistemi </li>{" "}
+              </a>
 
-              <li>Ölüm Bildirim Sistemi </li>
               <li> KPY Sistemi Eğitim Videosu </li>
               <a href={EimzPdf} target="_blank  ">
                 <li>E-Reçete E-İmza İşlemleri </li>{" "}

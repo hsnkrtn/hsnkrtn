@@ -1457,7 +1457,7 @@ export class ContextProvider extends Component {
           Kisiler: [
             {
               id: "1",
-              unvan: "Bilgi İşlem Koordinatörü Yardımcı Doçent Doktor",
+              unvan: "Bilgi İşlem Koordinatörü Yrd. Doç. Dr.",
               Adi: "Ayhan AKBAL",
               Hakkinda:
                 "1977 yılında Elazığ’da doğdu. 1999 yılında Fırat Üniversitesi Elektrik-Elektronik Mühendisliğinden mezun oldu. Aynı yıl İstanbul’da Bilişim Sektöründe çeşitli firmalarda çalıştı. Aynı zamanda Fırat Üniversitesi Elektrik-Elektronik Mühendisliği Telekomünikasyon Anabilim Dalında Yüksek Lisansa başladı. 2001 yılında Elektrik-Elektronik Mühendisliğinde Araştırma Görevlisi olarak göreve başladı. 2003 yılında Yüksek Lisansını tamamlayarak Doktoraya başladı. Bu süreçte Fırat Üniversitesi Bilgi İşlem Daire Başkanlığında Başkan Yardımcısı görevine başlayarak , Enformatik Bölüm Başkan Yardımcılığını, Fırat Üniversitesi Eğitim Genel Koordinatörlüğü, Network Management (Sistem Yöneticisi, ECDL Test Sorumlusu, Bilgi İşlem Dairesinin ( yazılım geliştirme, arıza giderme, sistem konfigürasyonu vs gibi) görevlerini yaptı. 2008 yılında Telekomünikasyon Anabilim Dalında Doktorasını tamamlayarak, Öğretim Üyesi olarak atandı. Aynı yıl Fırat Üniversitesi Hastanesi Bilgi İşlem ve Kalite Koordinatörü olarak atandı. Aynı zamanda Elektrik-Elektronik Mühendisliği Telekomünikasyon Anabilim Dalı Başkanı olarak ta atandı. Alanında birçok altyapı projesi gerçekleştirdi. Bir çok uluslararası ve ulusal konferansta projelerini ve çalışmalarını sundu.",
