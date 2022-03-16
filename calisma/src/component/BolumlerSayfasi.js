@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import DataConsumer from "../context";
 import { Link } from "react-router-dom";
 
-export class DoktorlarSayfasi extends Component {
+export class BolumlerSayfası extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -15,6 +15,8 @@ export class DoktorlarSayfasi extends Component {
       DahiliListesi: [],
       DigerTedaviListesi: [],
       TemelListesi: [],
+      Baslik: "",
+
     };
   }
   render() {
@@ -37,10 +39,11 @@ export class DoktorlarSayfasi extends Component {
                     <ul>
                       {this.state.DahiliListesi.map((DahiliListesi, index) => {
                         return (
-                          <Link
+                            <Link
                             to={{
-                              pathname: `/Doktorlar/${DahiliListesi.id} `,
+                              pathname: `/Bolumler/${DahiliListesi.id} `,
                               state: {
+                                Baslik: this.state.Baslik,
                                 Gonderilenveriler:
                                   this.state.DahiliListesi[index],
                               },
@@ -66,23 +69,24 @@ export class DoktorlarSayfasi extends Component {
                         (CerrahiListesi, index) => {
                           return (
                             <Link
-                              to={{
-                                pathname: `/Doktorlar/${CerrahiListesi.id} `,
-                                state: {
-                                  Gonderilenveriler:
-                                    this.state.CerrahiListesi[index],
-                                },
-                              }}
-                            >
-                              <li>
-                                &nbsp;
-                                <span>
-                                  <i className="fa fa-chevron-right"></i>
-                                </span>
-                                &nbsp;
-                                {CerrahiListesi.BolumAdi}
-                              </li>
-                            </Link>
+                            to={{
+                              pathname: `/Bolumler/${CerrahiListesi.id} `,
+                              state: {
+                                Baslik: this.state.Baslik,
+                                Gonderilenveriler:
+                                  this.state.CerrahiListesi[index],
+                              },
+                            }}
+                          >
+                            <li>
+                              &nbsp;
+                              <span>
+                                <i className="fa fa-chevron-right"></i>
+                              </span>
+                              &nbsp;
+                              {CerrahiListesi.BolumAdi}
+                            </li>
+                          </Link>
                           );
                         }
                       )}{" "}
@@ -93,23 +97,24 @@ export class DoktorlarSayfasi extends Component {
                       {this.state.TemelListesi.map((TemelListesi, index) => {
                         return (
                           <Link
-                            to={{
-                              pathname: `/Doktorlar/${TemelListesi.id} `,
-                              state: {
-                                Gonderilenveriler:
-                                  this.state.TemelListesi[index],
-                              },
-                            }}
-                          >
-                            <li>
-                              &nbsp;
-                              <span>
-                                <i className="fa fa-chevron-right"></i>
-                              </span>
-                              &nbsp;
-                              {TemelListesi.BolumAdi}
-                            </li>
-                          </Link>
+                          to={{
+                            pathname: `/Bolumler/${TemelListesi.id} `,
+                            state: {
+                              Baslik: this.state.Baslik,
+                              Gonderilenveriler:
+                                this.state.TemelListesi[index],
+                            },
+                          }}
+                        >
+                          <li>
+                            &nbsp;
+                            <span>
+                              <i className="fa fa-chevron-right"></i>
+                            </span>
+                            &nbsp;
+                            {TemelListesi.BolumAdi}
+                          </li>
+                        </Link>
                         );
                       })}{" "}
                     </ul>
@@ -120,23 +125,24 @@ export class DoktorlarSayfasi extends Component {
                         (DigerTedaviListesi, index) => {
                           return (
                             <Link
-                              to={{
-                                pathname: `/Doktorlar/${DigerTedaviListesi.id} `,
-                                state: {
-                                  Gonderilenveriler:
-                                    this.state.DigerTedaviListesi[index],
-                                },
-                              }}
-                            >
-                              <li>
-                                &nbsp;
-                                <span>
-                                  <i className="fa fa-chevron-right"></i>
-                                </span>
-                                &nbsp;
-                                {DigerTedaviListesi.BolumAdi}
-                              </li>
-                            </Link>
+                            to={{
+                              pathname: `/Bolumler/${DigerTedaviListesi.id} `,
+                              state: {
+                                Baslik: this.state.Baslik,
+                                Gonderilenveriler:
+                                  this.state.DigerTedaviListesi[index],
+                              },
+                            }}
+                          >
+                            <li>
+                              &nbsp;
+                              <span>
+                                <i className="fa fa-chevron-right"></i>
+                              </span>
+                              &nbsp;
+                              {DigerTedaviListesi.BolumAdi}
+                            </li>
+                          </Link>
                           );
                         }
                       )}{" "}
@@ -152,4 +158,4 @@ export class DoktorlarSayfasi extends Component {
   }
 }
 
-export default DoktorlarSayfasi;
+export default BolumlerSayfası;

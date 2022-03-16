@@ -1223,8 +1223,8 @@ color: #4f647f;
 
 .footerlogo {
   position: relative;
-  width: 100%;
-  height: 28%;
+  width: 400px;
+  height: 142px;
   top: 4px;
   left: 0px;
   cursor: pointer;
@@ -1258,9 +1258,7 @@ color: #4f647f;
 .footerlogodetails .fa-envelope {
   font-size: 16px;
 }
-.footerlogo {
-  margin-right: 0%;
-}
+
 .SocialMedia {
   position: relative;
   top: 0px;
@@ -1349,6 +1347,11 @@ color: #4f647f;
   .logolink {
     position: relative;
     left: 0%;
+  }
+  .footerlogo {
+    margin-right: 0%;
+    height: 28%;
+    width: 100%;
   }
 
   .Links {

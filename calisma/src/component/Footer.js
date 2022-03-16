@@ -5,6 +5,7 @@ import EödenekPdf from "../component/Dosyalar/Eödenek.pdf";
 import { Link } from "react-router-dom";
 
 class Footer extends Component {
+
   render() {
     const Logo = HastaneFotograflari[0].Logo;
     return (
@@ -116,8 +117,8 @@ class Footer extends Component {
                 {" "}
                 <li>Yemek Listesi </li>{" "}
               </a>
-
-              <li>Doktorlarımız </li>
+<Link to="/DoktorlarSayfasi" >  <li>Doktorlarımız </li>   </Link>
+             
               <li>Tanı ve Tedavi Üniteleri </li>
               <li>Destek Birimleri </li>
               <li> Hemşirelik Hizmetleri </li>

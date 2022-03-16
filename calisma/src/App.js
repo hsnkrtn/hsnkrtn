@@ -13,6 +13,7 @@ import DuyuruSayfası from "./component/DuyuruSayfası";
 import GerekliDokumanlar from "./component/GerekliDokumanlar"; 
 import Covid19 from "./component/Covid19"; 
 import DoktorlarSayfasi from "./component/DoktorlarSayfasi"; 
+import BolumlerSayfasi from "./component/BolumlerSayfasi"; 
 
 class App extends Component {
   render() {
@@ -49,6 +50,9 @@ class App extends Component {
               <Covid19/>
             </Route>
             <Route path="/DoktorlarSayfasi">
+              <DoktorlarSayfasi/>
+            </Route>
+            <Route path="/BolumlerSayfasi">
               <DoktorlarSayfasi/>
             </Route>
           </Switch>
