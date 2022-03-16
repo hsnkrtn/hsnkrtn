@@ -7,17 +7,14 @@ import hastane4 from "../Resimler/hastane4.jpg"
 
 export const  images = [
     {
-        title: " h",
         Resim: hastane1,
 
     },
     {
-        title: " h",
         Resim: hastane2,
 
     },
     {
-        title: " h",
         Resim: hastane3,
 
     },

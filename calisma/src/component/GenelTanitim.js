@@ -6,7 +6,7 @@ function GenelTanitim(props) {
   const location = useLocation();
   const Baslik = location.state.Baslik;
   const Detay = location.state.Detay;
-  const Fotograf = location.state.Fotograf;
+  const Gorsel = location.state.Gorsel;
   useEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -14,7 +14,7 @@ function GenelTanitim(props) {
     <div className="RouterSayfasi">
       <div className="RouterSayfasiIcerik">
         <section className="RouterSayfasiDetay">
-          <img className="RouterSayfasiFotograf" src={Fotograf}></img>{" "}
+          <img className="RouterSayfasiFotograf" src={Gorsel}></img>{" "}
           <h1> {Baslik}</h1>
           <hr></hr>
           <p1> {Detay}</p1>

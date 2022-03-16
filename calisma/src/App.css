@@ -5,7 +5,9 @@
 .Home {
   height: 2400px;
 }
-
+.LinksListItem {
+  color: #fff;
+}
 .LinksListItem::after {
   position: absolute;
   content: "";
@@ -20,12 +22,14 @@
   width: 100%;
   left: 0;
 }
-
 .logolink {
   height: fit-content;
   width: fit-content;
   position: absolute;
   left: 10%;
+}
+.DoktorlarButton {
+  color: #fff;
 }
 
 .brand {
@@ -133,7 +137,19 @@ a:hover {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.DoktorlarSayfasi ul {
+  list-style: none;
+}
+.DoktorlarSayfasi h1 {
+  font-size: 18px;
+}
+.DoktorlarSayfasi a {
+  text-decoration: none;
+color: #4f647f;
+}
+.DoktorlarSayfasi a:hover{
+  color: #850432;
+}
 .YonetimCards {
   padding: 0%;
   width: fit-content;
@@ -1207,11 +1223,12 @@ a:hover {
 
 .footerlogo {
   position: relative;
-  width: 400px;
-  height: 142px;
+  width: 100%;
+  height: 28%;
   top: 4px;
   left: 0px;
   cursor: pointer;
+  margin-left: 0px;
   margin-bottom: 50px;
 }
 .footerInner ul {
@@ -1328,31 +1345,23 @@ a:hover {
     height: 50px;
     width: 140px;
   }
+
   .logolink {
     position: relative;
-    left: 5%;
-  }
-  .brand1 {
     left: 0%;
-    top: 20px;
-    height: 50px;
-    width: 140px;
   }
 
   .Links {
     display: none;
   }
   .Links ul {
-overflow: scroll;
-
+    overflow: scroll;
   }
   .LinksList {
     position: absolute;
     display: block;
     width: 300px;
     height: 500px;
-
-
   }
 
   .LinksList li {
@@ -1447,7 +1456,6 @@ overflow: scroll;
     height: 50px;
     display: flex;
     align-items: flex-start;
-    
   }
   .CerrahiButton {
     position: absolute;
@@ -1548,19 +1556,19 @@ overflow: scroll;
     margin-left: 13px;
     margin-right: 13px;
   }
-  
-.DoktorlarCardsDetay {
-  text-align: center;
-  height: 50%;
-  width: 100%;
-  padding-top: 15%;
-}
-.DoktorlarCardsDetay h4 {
-  font-size: 10px;
-}
-.DoktorlarCardsDetay p1 {
-  font-size: 12px;
-}
+
+  .DoktorlarCardsDetay {
+    text-align: center;
+    height: 50%;
+    width: 100%;
+    padding-top: 15%;
+  }
+  .DoktorlarCardsDetay h4 {
+    font-size: 10px;
+  }
+  .DoktorlarCardsDetay p1 {
+    font-size: 12px;
+  }
 
   .RandevuAlButton {
     width: 100px;
@@ -1704,9 +1712,7 @@ overflow: scroll;
     font-size: 14px;
     cursor: pointer;
   }
-  .footerlogo {
-    width: 100%;
-  }
+
   .OnemliLinkler {
     position: relative;
     top: 100px;
@@ -1735,12 +1741,10 @@ overflow: scroll;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 30px;
-    
   }
   .infoyonetim {
     min-height: 300px;
     transform: translateY(0%) translateY(240px) translateZ(0);
-  
   }
   .infoyonetim h1 {
     font-size: 18px;
@@ -1768,12 +1772,12 @@ overflow: scroll;
     transform: translateY(0%) translateY(400px) translateZ(0);
     transition: transform 0.5s ease-out;
   }
-  .BashekimSayfasiBilgiler h1{
+  .BashekimSayfasiBilgiler h1 {
     font-size: 16px;
-   }
-   .BashekimSayfasiBilgilerDetay {
-     font-size: 12px;
-   }
+  }
+  .BashekimSayfasiBilgilerDetay {
+    font-size: 12px;
+  }
   .RouterSayfasi {
     width: 100%;
   }

@@ -18,10 +18,10 @@ function Doktorlar(props) {
       <div className="RouterSayfasiIcerik">
         <img className="RouterSayfasiFotograf" src={fotograflar}></img>
         <section className="RouterSayfasiDetay">
-          <h1>{Baslik}</h1>{" "}
           <div className="BolumlerDoktorlar">
-            <hr></hr>
             <h1 className="DoktolarBaslığı">{Baslik} Doktorları</h1>
+            <hr></hr>
+
             {Doktorlar.map((Doktor) => {
               return (
                 <DoktorlarCards

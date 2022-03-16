@@ -9,7 +9,6 @@ function ResimlerSlider(props) {
   const Baslik = props.Baslik;
 
 
-  console.log(DataNumber);
 
   return (
     <div className="ResimSlider">

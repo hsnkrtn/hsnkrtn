@@ -15,7 +15,7 @@ function Bolumler(props) {
   const Baslik = Gelenveriler.BolumAdi;
   const Detay = Gelenveriler.Detay;
   const Doktorlar = Gelenveriler.Doktorlar;
-const BolumFotograflari=Gelenveriler.Fotograf
+const BolumFotograflari=Gelenveriler.Gorseller
 
   return (
     <div className="RouterSayfasi">
