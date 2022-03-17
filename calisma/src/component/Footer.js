@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { HastaneFotograflari } from "./Helpers/HastaneResimlerData.js";
 import EimzPdf from "../component/Dosyalar/Eimza.pdf";
+
 import EödenekPdf from "../component/Dosyalar/Eödenek.pdf";
 import { Link } from "react-router-dom";
 
 class Footer extends Component {
-
   render() {
     const Logo = HastaneFotograflari[0].Logo;
     return (
@@ -117,14 +117,20 @@ class Footer extends Component {
                 {" "}
                 <li>Yemek Listesi </li>{" "}
               </a>
-<Link to="/DoktorlarSayfasi" >  <li>Doktorlarımız </li>   </Link>
-             
-              <li>Tanı ve Tedavi Üniteleri </li>
+              <Link to="/DoktorlarSayfasi">
+                {" "}
+                <li>Doktorlarımız </li>{" "}
+              </Link>
+              <Link to="/BolumlerSayfasi">
+                {" "}
+                <li>Tanı ve Tedavi Üniteleri </li>
+              </Link>
+
               <li>Destek Birimleri </li>
               <li> Hemşirelik Hizmetleri </li>
-              <li>Anlaşmalı Kurumlar </li>
               <li>Diğer Hizmetler </li>
-              <li>Enfeksiyon Komitesi </li>
+              <Link  to="EnfeksiyonKomitesi" >   <li>Enfeksiyon Komitesi </li> </Link>
+             
               <li>Yanık Tedavi Merkezi</li>
               <a
                 href="http://10.8.12.140/telefonsonuc.asp?aranan=all"

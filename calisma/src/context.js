@@ -1684,8 +1684,8 @@ export class ContextProvider extends Component {
         },
         {
           id: 14,
-          Baslik: "14duyularin baslik burada bu sekilde gorunecek",
-          Detay: "DuyuruDetayi",
+          Baslik: "14duyularin baslik burada bu sekilde gorunecek 14duyularin baslik burada bu sekilde gorunecek 14duyularin baslik burada bu sekilde gorunecek 14duyularin baslik burada bu sekilde gorunecek 14duyularin baslik burada bu sekilde gorunecek",
+          Detay: "DuyuruDetayi 14duyularin baslik burada bu sekilde gorunecek",
           Dtarih: "09.02.2022",
           Fotograf: hastane4, 
         },

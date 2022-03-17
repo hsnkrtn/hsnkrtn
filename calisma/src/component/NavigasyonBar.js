@@ -62,7 +62,7 @@ class Navigasyonbar extends Component {
           this.state.Mudurler = value.Mudurler;
           this.state.Hemsirelik = value.Hemsirelik;
           this.state.BilgiIslemKoordinatorlugu =
-            value.BilgiIslemKoordinatorlugu;
+            value.BilgiIslemKoordinatorlugu;                                 
 
           this.state.BolumlerListesi = value.Bolumler;
 
