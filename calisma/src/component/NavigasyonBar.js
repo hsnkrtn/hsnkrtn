@@ -631,6 +631,8 @@ class Navigasyonbar extends Component {
                       this.setState({ showIletisimItems: false });
                     }}
                   >
+                    <Link  to="/Iletisim" > 
+
                     <li
                       className="LinksListItem"
                       onMouseEnter={() => {
@@ -639,7 +641,7 @@ class Navigasyonbar extends Component {
                     >
                       İletişim
                     </li>
-
+                    </Link> 
                     <div
                       className={
                         this.state.showIletisimItems

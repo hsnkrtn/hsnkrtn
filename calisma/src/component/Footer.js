@@ -139,8 +139,8 @@ class Footer extends Component {
                 {" "}
                 <li>Telefon Rehberi</li>{" "}
               </a>
-
-              <li>İletişim</li>
+<Link  to="/Iletisim" >   <li>İletişim</li></Link> 
+              
             </ul>
           </div>
           <div className="Dokumanlar">

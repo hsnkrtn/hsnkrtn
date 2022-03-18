@@ -19,7 +19,7 @@ class Duyurular extends Component {
       GosterilecekDuyurular: [],
       Baslik: "",
       Detay: "",
-      Fotograf:"",
+      Fotograf: "",
     };
   }
   componentDidMount() {
@@ -60,8 +60,6 @@ class Duyurular extends Component {
   };
 
   render() {
-
-
     return (
       <DataConsumer>
         {(value) => {
@@ -86,8 +84,9 @@ class Duyurular extends Component {
                                 this.state.GosterilecekDuyurular[index].Baslik,
                               Detay:
                                 this.state.GosterilecekDuyurular[index].Detay,
-                                Fotograf:
-                                this.state.GosterilecekDuyurular[index].Fotograf,
+                              Fotograf:
+                                this.state.GosterilecekDuyurular[index]
+                                  .Fotograf,
                             });
                           }}
                           to={{
@@ -95,7 +94,7 @@ class Duyurular extends Component {
                             state: {
                               Baslik: this.state.Baslik,
                               Detay: this.state.Detay,
-                              Fotograf:this.state.Fotograf,
+                              Fotograf: this.state.Fotograf,
                             },
                           }}
                         >
@@ -104,16 +103,20 @@ class Duyurular extends Component {
                             key={index}
                             id={GosterilecekDuyurular.DuyuruId}
                           >
-                            <div className="DuyuruIcon">
-                              <i class="fa  fa-envelope"></i>
-                            </div>
-
                             <div className="DuyuruIcerik">
-                              <h1 className="DuyuruBaslik">
-                                {GosterilecekDuyurular.Baslik}
-                              </h1>
-                              <div className="Dtarih">
-                                <p> {GosterilecekDuyurular.Dtarih} </p>
+                              {" "}
+                              <section className="DuyuruTarihi">
+                                <div class="date">
+                                  <span class="binds"></span>
+                                  <span class="month">agustos</span>
+                                  <h2 class="day">28</h2>
+                                  
+                                  <h3 class="Year">2022</h3>
+                                </div>
+                              </section>
+                              <div className="DuyuruBaslik">
+                                {" "}
+                                <h1>{GosterilecekDuyurular.Baslik}</h1>{" "}
                               </div>
                             </div>
                           </li>

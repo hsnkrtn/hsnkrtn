@@ -27,7 +27,6 @@ export class DoktorlarSayfasi extends Component {
           this.state.TemelListesi = value.Bolumler[0].TemelTipBilimleri;
           this.state.DigerTedaviListesi =
             value.Bolumler[0].DigerTedaviUniteleri;
-          console.log(this.state.DahiliTıpBilimleri);
           return (
             <div className="RouterSayfasi">
               <div className="RouterSayfasiIcerik">

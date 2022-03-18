@@ -9,7 +9,6 @@ function Doktorlar(props) {
   const location = useLocation();
   const Gelenveriler = location.state.Gonderilenveriler;
   const Baslik = Gelenveriler.BolumAdi;
-  const Detay = Gelenveriler.Detay;
   const Doktorlar = Gelenveriler.Doktorlar;
 
 
