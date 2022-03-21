@@ -9,7 +9,6 @@ function ResimlerSlider(props) {
   const Baslik = props.Baslik;
 
 
-
   return (
     <div className="ResimSlider">
       <h1>{Baslik} Fotografları</h1>

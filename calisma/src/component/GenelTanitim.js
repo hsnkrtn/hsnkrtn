@@ -12,6 +12,9 @@ function GenelTanitim(props) {
   const Gorsel = Gelenveriler.Gorseller;
 
   const id = Gelenveriler.id;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <div className="RouterSayfasi">
