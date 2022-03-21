@@ -21,6 +21,7 @@ class Navigasyonbar extends Component {
       showDoktorlarList: false,
       showIletisimItems: false,
       BashekimKey: false,
+      TanıtımListesi: false,
       TanıtımListesi: [],
       KurumsalListesi: [],
       YonetimListesi: [],
@@ -36,6 +37,7 @@ class Navigasyonbar extends Component {
       Baslik: "",
       Gorsel: "",
       Detay: "",
+      id: "",
     };
   }
 
@@ -62,7 +64,7 @@ class Navigasyonbar extends Component {
           this.state.Mudurler = value.Mudurler;
           this.state.Hemsirelik = value.Hemsirelik;
           this.state.BilgiIslemKoordinatorlugu =
-            value.BilgiIslemKoordinatorlugu;                                 
+            value.BilgiIslemKoordinatorlugu;
 
           this.state.BolumlerListesi = value.Bolumler;
 
@@ -127,6 +129,12 @@ class Navigasyonbar extends Component {
                                     Gorsel:
                                       this.state.TanıtımListesi[index]
                                         .Gorseller,
+                                    id: this.state.TanıtımListesi[index].id,
+                                  });
+                                }}
+                                onMouseLeave={() => {
+                                  this.setState({
+                                    ResimlerVeVideolarKey: false,
                                   });
                                 }}
                                 to={{
@@ -137,6 +145,8 @@ class Navigasyonbar extends Component {
                                     Gorsel:
                                       this.state.TanıtımListesi[index]
                                         .Gorseller,
+                        
+                                    id: this.state.id,
                                   },
                                 }}
                               >
@@ -631,17 +641,16 @@ class Navigasyonbar extends Component {
                       this.setState({ showIletisimItems: false });
                     }}
                   >
-                    <Link  to="/Iletisim" > 
-
-                    <li
-                      className="LinksListItem"
-                      onMouseEnter={() => {
-                        this.setState({ showIletisimItems: true });
-                      }}
-                    >
-                      İletişim
-                    </li>
-                    </Link> 
+                    <Link to="/Iletisim">
+                      <li
+                        className="LinksListItem"
+                        onMouseEnter={() => {
+                          this.setState({ showIletisimItems: true });
+                        }}
+                      >
+                        İletişim
+                      </li>
+                    </Link>
                     <div
                       className={
                         this.state.showIletisimItems

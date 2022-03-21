@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-
+import React, { useEffect, useState } from "react";
+import ResimlerSlider from "./ResimlerSlider";
 import { useLocation } from "react-router-dom";
 
 function GenelTanitim(props) {
@@ -7,18 +7,25 @@ function GenelTanitim(props) {
   const Baslik = location.state.Baslik;
   const Detay = location.state.Detay;
   const Gorsel = location.state.Gorsel;
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
+  let id = location.state.id;
+
   return (
     <div className="RouterSayfasi">
       <div className="RouterSayfasiIcerik">
-        <section className="RouterSayfasiDetay">
-          <img className="RouterSayfasiFotograf" src={Gorsel}></img>{" "}
+        <div className="RouterSayfasiDetay">
+          {id === 'ResimlerVeVideolar' ? null : (
+            <img className="RouterSayfasiFotograf" src={Gorsel}></img>
+          )}
+
           <h1> {Baslik}</h1>
           <hr></hr>
           <p1> {Detay}</p1>
-        </section>
+          {id === 'ResimlerVeVideolar' ? (
+            <ResimlerSlider Fotograf={Gorsel} />
+          ) : null}
+
+          
+        </div>
       </div>
     </div>
   );

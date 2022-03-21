@@ -9,23 +9,21 @@ function Bolumler(props) {
     window.scrollTo(0, 0);
   });
 
-
   const location = useLocation();
   const Gelenveriler = location.state.Gonderilenveriler;
   const Baslik = Gelenveriler.BolumAdi;
   const Detay = Gelenveriler.Detay;
   const Doktorlar = Gelenveriler.Doktorlar;
-const BolumFotograflari=Gelenveriler.Gorseller
+  const BolumFotograflari = Gelenveriler.Gorseller;
 
   return (
     <div className="RouterSayfasi">
       <div className="RouterSayfasiIcerik">
-     
         <section className="RouterSayfasiDetay">
           <h1>{Baslik}</h1>
           <p1>{Detay} </p1>
-    <hr></hr>
-    <ResimlerSlider  Baslik={Baslik}   Fotograf={BolumFotograflari} />
+          <hr></hr>
+          <ResimlerSlider Baslik={Baslik} Fotograf={BolumFotograflari} />
         </section>
         <div className="BolumlerDoktorlar">
           <hr></hr>
