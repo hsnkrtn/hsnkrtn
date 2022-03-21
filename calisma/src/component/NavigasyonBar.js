@@ -34,10 +34,7 @@ class Navigasyonbar extends Component {
       BilgiIslemKoordinatorlugu: [],
       Hemsirelik: [],
       Mudurler: [],
-      Baslik: "",
-      Gorsel: "",
-      Detay: "",
-      id: "",
+  
     };
   }
 
@@ -120,18 +117,7 @@ class Navigasyonbar extends Component {
                           (TanıtımListesi, index) => {
                             return (
                               <Link
-                                onMouseEnter={() => {
-                                  this.setState({
-                                    Baslik:
-                                      this.state.TanıtımListesi[index].Baslik,
-                                    Detay:
-                                      this.state.TanıtımListesi[index].Detay,
-                                    Gorsel:
-                                      this.state.TanıtımListesi[index]
-                                        .Gorseller,
-                                    id: this.state.TanıtımListesi[index].id,
-                                  });
-                                }}
+                  
                                 onMouseLeave={() => {
                                   this.setState({
                                     ResimlerVeVideolarKey: false,
@@ -140,13 +126,8 @@ class Navigasyonbar extends Component {
                                 to={{
                                   pathname: `/GenelTanitim/Tanitim/${TanıtımListesi.id} `,
                                   state: {
-                                    Baslik: this.state.Baslik,
-                                    Detay: this.state.Detay,
-                                    Gorsel:
-                                      this.state.TanıtımListesi[index]
-                                        .Gorseller,
-                        
-                                    id: this.state.id,
+                                    Gonderilenveriler:
+                                    this.state.TanıtımListesi[index],
                                   },
                                 }}
                               >
@@ -205,25 +186,11 @@ class Navigasyonbar extends Component {
                           (KurumsalListesi, index) => {
                             return (
                               <Link
-                                onMouseEnter={() => {
-                                  this.setState({
-                                    Baslik:
-                                      this.state.KurumsalListesi[index].Baslik,
-                                    Detay:
-                                      this.state.KurumsalListesi[index].Detay,
-                                    Gorsel:
-                                      this.state.KurumsalListesi[index]
-                                        .Gorseller,
-                                  });
-                                }}
                                 to={{
                                   pathname: `/GenelTanitim/Kurumsal/${KurumsalListesi.id} `,
                                   state: {
-                                    Baslik: this.state.Baslik,
-                                    Detay: this.state.Detay,
-                                    Gorsel:
-                                      this.state.KurumsalListesi[index]
-                                        .Gorseller,
+                                    Gonderilenveriler:
+                                      this.state.KurumsalListesi[index],
                                   },
                                 }}
                               >
@@ -286,10 +253,6 @@ class Navigasyonbar extends Component {
                                       BashekimKey: true,
                                     });
                                   }
-
-                                  this.setState({
-                                    Baslik: YonetimListesi.Baslik,
-                                  });
                                 }}
                                 onMouseLeave={() => {
                                   this.setState({
@@ -299,10 +262,10 @@ class Navigasyonbar extends Component {
                                 to={{
                                   pathname: `/Yonetim/${YonetimListesi.id} `,
                                   state: {
-                                    Baslik: this.state.Baslik,
                                     Gonderilenveriler:
-                                      this.state.YonetimListesi[index].Kisiler,
+                                      this.state.YonetimListesi[index],
                                     BashekimKey: this.state.BashekimKey,
+                                    id: this.state.YonetimListesi.id,
                                   },
                                 }}
                               >

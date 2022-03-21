@@ -1545,17 +1545,8 @@ export class ContextProvider extends Component {
             },
           ],
         },
-        { id: "6", Baslik: "Organizasyon Şeması",
-        Kisiler: [
-          {
-            id: "1",
-            unvan: "",
-            Adi: "",
-            Hakkinda: "",
-            Fotograf: "" ,
-          },
- 
-        ], },
+        { id: 'OrganizasyonSemasi', Baslik: "Organizasyon Şeması",
+    },
       ],  
 
       Haberler: [
