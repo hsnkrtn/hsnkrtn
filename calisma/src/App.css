@@ -516,10 +516,6 @@ a:hover {
   height: 500px;
   width: 1150px;
 }
-.IletisiItemsIframe h1 {
-  font-weight: bold;
-  font-size: 16px;
-}
 
 .HastaneIletisim {
   position: relative;
@@ -527,7 +523,13 @@ a:hover {
   background-color: #4f647f;
   color: white;
   font-weight: 100;
+  padding: 20px;
 }
+.HastaneIletisim h2{
+  font-weight: bold;
+  font-size: 15px;
+} 
+
 
 .harita {
   position: relative;
@@ -1275,6 +1277,11 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+.Footer a {
+ color: white; 
+ text-decoration: none;
+}
+
 .footerInner {
   position: absolute;
   height: 500px;

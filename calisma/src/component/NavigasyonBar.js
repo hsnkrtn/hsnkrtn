@@ -629,16 +629,17 @@ class Navigasyonbar extends Component {
                         {" "}
                       </iframe>
                       <div className="HastaneIletisim">
-                        <h>Adres </h> : Üniversite Mahallesi Yahya Kemal Caddesi
+                        <h2>Adres : </h2>Üniversite Mahallesi Yahya Kemal Caddesi
                         No:25 MERKEZ/ELAZIĞ <br></br>
-                        <h>Telefon </h>: 0424 233 35 55<br></br>
-                        <h>E-mail </h>: hastane@firat.edu.tr<br></br>
-                        <h> Hesap Bilgileri:</h>
+                        <h2>Telefon :</h2> 0424 233 35 55<br></br>
+                        <h2>E-mail : </h2> hastane@firat.edu.tr<br></br>
                         <br></br>
-                        <h>Banka adı : </h>T.C. Ziraat Bankasi <br></br>
-                        <h> Fırat Şubesi Hesap adı : </h> Fırat Üniversitesi
+
+                        <h2> Hesap Bilgileri</h2>
+                        <h2>Banka adı : </h2>T.C. Ziraat Bankasi
+                        <h2> Fırat Şubesi Hesap adı : </h2> Fırat Üniversitesi
                         Döner Sermaye İşletme Müdürlüğü <br></br>
-                        <h>İban no : </h> TR860001001561135354675057
+                        <h2>İban no : </h2> TR860001001561135354675057
                         <button
                           className="GeriButtonBolumler"
                           onMouseEnter={() =>
