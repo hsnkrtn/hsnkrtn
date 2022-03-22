@@ -34,7 +34,6 @@ class Navigasyonbar extends Component {
       BilgiIslemKoordinatorlugu: [],
       Hemsirelik: [],
       Mudurler: [],
-  
     };
   }
 
@@ -117,7 +116,6 @@ class Navigasyonbar extends Component {
                           (TanıtımListesi, index) => {
                             return (
                               <Link
-                  
                                 onMouseLeave={() => {
                                   this.setState({
                                     ResimlerVeVideolarKey: false,
@@ -127,11 +125,11 @@ class Navigasyonbar extends Component {
                                   pathname: `/GenelTanitim/Tanitim/${TanıtımListesi.id} `,
                                   state: {
                                     Gonderilenveriler:
-                                    this.state.TanıtımListesi[index],
+                                      this.state.TanıtımListesi[index],
                                   },
                                 }}
                               >
-                                <li className="ListelerButonlari"  >
+                                <li className="ListelerButonlari">
                                   &nbsp;
                                   <span>
                                     <i className="fa fa-chevron-right"></i>
@@ -194,7 +192,7 @@ class Navigasyonbar extends Component {
                                   },
                                 }}
                               >
-                                <li className="ListelerButonlari" >
+                                <li className="ListelerButonlari">
                                   &nbsp;
                                   <span>
                                     <i className="fa fa-chevron-right"></i>
@@ -269,7 +267,7 @@ class Navigasyonbar extends Component {
                                   },
                                 }}
                               >
-                                <li className="ListelerButonlari" >
+                                <li className="ListelerButonlari">
                                   &nbsp;
                                   <span>
                                     <i className="fa fa-chevron-right"></i>
@@ -354,7 +352,7 @@ class Navigasyonbar extends Component {
                                       },
                                     }}
                                   >
-                                    <li className="ListelerButonlari" >
+                                    <li className="ListelerButonlari">
                                       &nbsp;
                                       <span>
                                         <i className="fa fa-chevron-right"></i>
@@ -415,7 +413,7 @@ class Navigasyonbar extends Component {
                                       },
                                     }}
                                   >
-                                    <li className="ListelerButonlari" >
+                                    <li className="ListelerButonlari">
                                       &nbsp;
                                       <span>
                                         <i className="fa fa-chevron-right"></i>
@@ -477,7 +475,7 @@ class Navigasyonbar extends Component {
                                       },
                                     }}
                                   >
-                                    <li className="ListelerButonlari" >
+                                    <li className="ListelerButonlari">
                                       &nbsp;
                                       <span>
                                         <i className="fa fa-chevron-right"></i>
@@ -538,7 +536,7 @@ class Navigasyonbar extends Component {
                                       },
                                     }}
                                   >
-                                    <li  className="ListelerButonlari" >
+                                    <li className="ListelerButonlari">
                                       &nbsp;
                                       <span>
                                         <i className="fa fa-chevron-right"></i>
@@ -598,21 +596,9 @@ class Navigasyonbar extends Component {
                     ></div>
                   </div>
 
-                  <div
-                    className="NavigasyonBarItemsStyle"
-                    onMouseLeave={() => {
-                      this.setState({ showIletisimItems: false });
-                    }}
-                  >
+                  <div className="NavigasyonBarItemsStyle">
                     <Link to="/Iletisim">
-                      <li
-                        className="LinksListItem"
-                        onMouseEnter={() => {
-                          this.setState({ showIletisimItems: true });
-                        }}
-                      >
-                        İletişim
-                      </li>
+                      <li className="LinksListItem">İletişim</li>
                     </Link>
                     <div
                       className={
@@ -629,12 +615,11 @@ class Navigasyonbar extends Component {
                         {" "}
                       </iframe>
                       <div className="HastaneIletisim">
-                        <h2>Adres : </h2>Üniversite Mahallesi Yahya Kemal Caddesi
-                        No:25 MERKEZ/ELAZIĞ <br></br>
+                        <h2>Adres : </h2>Üniversite Mahallesi Yahya Kemal
+                        Caddesi No:25 MERKEZ/ELAZIĞ <br></br>
                         <h2>Telefon :</h2> 0424 233 35 55<br></br>
                         <h2>E-mail : </h2> hastane@firat.edu.tr<br></br>
                         <br></br>
-
                         <h2> Hesap Bilgileri</h2>
                         <h2>Banka adı : </h2>T.C. Ziraat Bankasi
                         <h2> Fırat Şubesi Hesap adı : </h2> Fırat Üniversitesi
