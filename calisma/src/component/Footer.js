@@ -16,7 +16,7 @@ class Footer extends Component {
             <p1>
               <a href="mailto: hastane@firat.edu.tr?subject = Feedback&body = Message">
                 <span>
-                  <i class="fa fa-envelope"></i>{" "}
+                  <i className="fa fa-envelope"></i>{" "}
                 </span>{" "}
                 hastane@firat.edu.tr
               </a>
@@ -26,7 +26,7 @@ class Footer extends Component {
             <p1>
               <a href="tel: 04242333555">
                 <span>
-                  <i class="fa fa-phone"></i>{" "}
+                  <i className="fa fa-phone"></i>{" "}
                 </span>{" "}
                 &nbsp; 0424 233 35 55
               </a>
@@ -38,7 +38,7 @@ class Footer extends Component {
                 target="_blank"
               >
                 <span>
-                  <i class="fa fa-map"></i>
+                  <i className="fa fa-map"></i>
                 </span>
                 &nbsp; Üniversite Mahallesi Yahya Kemal Caddesi No:25
                 MERKEZ/ELAZIĞ
@@ -151,7 +151,7 @@ class Footer extends Component {
                     {" "}
                     <span>
                       {" "}
-                      <i class="fa fa-sign-out"></i>
+                      <i className="fa fa-sign-out"></i>
                     </span>{" "}
                     COVID-19
                   </h1>
@@ -165,7 +165,7 @@ class Footer extends Component {
                   <h1>
                     <span>
                       {" "}
-                      <i class="fa fa-sign-out"></i>
+                      <i className="fa fa-sign-out"></i>
                     </span>{" "}
                     İhale Duyuruları{" "}
                   </h1>
@@ -177,7 +177,7 @@ class Footer extends Component {
                     {" "}
                     <span>
                       {" "}
-                      <i class="fa fa-sign-out"></i>
+                      <i className="fa fa-sign-out"></i>
                     </span>{" "}
                     Gerekli Dökümanlar
                   </h1>

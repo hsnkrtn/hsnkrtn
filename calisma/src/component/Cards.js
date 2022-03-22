@@ -14,7 +14,7 @@ function Cards() {
         <div className="Card1">
           <div className="CardIcon">
             <span>
-              <i class="fa fa-calendar"></i>
+              <i className="fa fa-calendar"></i>
             </span>
           </div>
 
@@ -35,7 +35,7 @@ function Cards() {
         <div className="Card2">
           <div className="CardIcon">
             <span>
-              <i class="fa fa-flask"></i>
+              <i className="fa fa-flask"></i>
             </span>
           </div>
 
@@ -49,7 +49,7 @@ function Cards() {
         <div className="Card3">
           <div className="CardIcon">
             <span>
-              <i class="fa fa-stethoscope"></i>
+              <i className="fa fa-stethoscope"></i>
             </span>
           </div>{" "}
           <div className="CardHeader">

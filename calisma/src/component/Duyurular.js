@@ -140,7 +140,7 @@ class Duyurular extends Component {
                 }
                 onClick={this.slideUp}
               >
-                <i class="fa fa-angle-up"></i>
+                <i className="fa fa-angle-up"></i>
               </div>
             </div>
           );

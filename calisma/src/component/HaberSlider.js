@@ -83,17 +83,17 @@ class HaberSlider extends Component {
                         }}
                       >
                         <li
-                          class="Haber"
+                          className="Haber"
                           key={index}
                           id={GosterilecekHaberlerson.HaberId}
                         >
                           <div>
                             <img
-                              class="Hfotograf"
+                              className="Hfotograf"
                               src={GosterilecekHaberlerson.Fotograf[0]}
                             />
                           </div>
-                          <div class="Haberbody">
+                          <div className="Haberbody">
                             <h4>{GosterilecekHaberlerson.HaberBasligi}</h4>
                             <p>{GosterilecekHaberlerson.HaberDetayi}</p>
                           </div>

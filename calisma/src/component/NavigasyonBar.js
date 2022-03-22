@@ -131,7 +131,7 @@ class Navigasyonbar extends Component {
                                   },
                                 }}
                               >
-                                <li>
+                                <li className="ListelerButonlari"  >
                                   &nbsp;
                                   <span>
                                     <i className="fa fa-chevron-right"></i>
@@ -152,7 +152,7 @@ class Navigasyonbar extends Component {
                         }
                       >
                         <span>
-                          <i class="fa fa-reply"></i>
+                          <i className="fa fa-reply"></i>
                         </span>{" "}
                         &nbsp; Geri
                       </button>
@@ -194,7 +194,7 @@ class Navigasyonbar extends Component {
                                   },
                                 }}
                               >
-                                <li>
+                                <li className="ListelerButonlari" >
                                   &nbsp;
                                   <span>
                                     <i className="fa fa-chevron-right"></i>
@@ -215,7 +215,7 @@ class Navigasyonbar extends Component {
                         }
                       >
                         <span>
-                          <i class="fa fa-reply"></i>
+                          <i className="fa fa-reply"></i>
                         </span>{" "}
                         &nbsp; Geri
                       </button>
@@ -269,7 +269,7 @@ class Navigasyonbar extends Component {
                                   },
                                 }}
                               >
-                                <li>
+                                <li className="ListelerButonlari" >
                                   &nbsp;
                                   <span>
                                     <i className="fa fa-chevron-right"></i>
@@ -290,7 +290,7 @@ class Navigasyonbar extends Component {
                         }
                       >
                         <span>
-                          <i class="fa fa-reply"></i>
+                          <i className="fa fa-reply"></i>
                         </span>{" "}
                         &nbsp; Geri
                       </button>
@@ -354,7 +354,7 @@ class Navigasyonbar extends Component {
                                       },
                                     }}
                                   >
-                                    <li>
+                                    <li className="ListelerButonlari" >
                                       &nbsp;
                                       <span>
                                         <i className="fa fa-chevron-right"></i>
@@ -373,7 +373,7 @@ class Navigasyonbar extends Component {
                               }
                             >
                               <span>
-                                <i class="fa fa-reply"></i>
+                                <i className="fa fa-reply"></i>
                               </span>{" "}
                               &nbsp; Geri
                             </button>
@@ -415,7 +415,7 @@ class Navigasyonbar extends Component {
                                       },
                                     }}
                                   >
-                                    <li>
+                                    <li className="ListelerButonlari" >
                                       &nbsp;
                                       <span>
                                         <i className="fa fa-chevron-right"></i>
@@ -434,7 +434,7 @@ class Navigasyonbar extends Component {
                               }
                             >
                               <span>
-                                <i class="fa fa-reply"></i>
+                                <i className="fa fa-reply"></i>
                               </span>{" "}
                               &nbsp; Geri
                             </button>
@@ -477,7 +477,7 @@ class Navigasyonbar extends Component {
                                       },
                                     }}
                                   >
-                                    <li>
+                                    <li className="ListelerButonlari" >
                                       &nbsp;
                                       <span>
                                         <i className="fa fa-chevron-right"></i>
@@ -496,7 +496,7 @@ class Navigasyonbar extends Component {
                               }
                             >
                               <span>
-                                <i class="fa fa-reply"></i>
+                                <i className="fa fa-reply"></i>
                               </span>{" "}
                               &nbsp; Geri
                             </button>
@@ -538,7 +538,7 @@ class Navigasyonbar extends Component {
                                       },
                                     }}
                                   >
-                                    <li>
+                                    <li  className="ListelerButonlari" >
                                       &nbsp;
                                       <span>
                                         <i className="fa fa-chevron-right"></i>
@@ -557,7 +557,7 @@ class Navigasyonbar extends Component {
                               }
                             >
                               <span>
-                                <i class="fa fa-reply"></i>
+                                <i className="fa fa-reply"></i>
                               </span>{" "}
                               &nbsp; Geri
                             </button>
@@ -571,7 +571,7 @@ class Navigasyonbar extends Component {
                         }
                       >
                         <span>
-                          <i class="fa fa-reply"></i>
+                          <i className="fa fa-reply"></i>
                         </span>{" "}
                         &nbsp; Geri
                       </button>
@@ -646,7 +646,7 @@ class Navigasyonbar extends Component {
                           }
                         >
                           <span>
-                            <i class="fa fa-reply"></i>
+                            <i className="fa fa-reply"></i>
                           </span>{" "}
                           &nbsp; Geri
                         </button>
