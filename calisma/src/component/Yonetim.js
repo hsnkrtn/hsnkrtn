@@ -21,7 +21,7 @@ function Yonetim(props) {
       <div className="RouterSayfasiIcerik">
         <div className="RouterSayfasiDetay">
           <h1>{Baslik}</h1>
-     {  id === 'OrganizasyonSemasi' ? <a href={organizasyonsemasi}>  <p1>Organizasyon Şeması<span>                       <i class="fa fa-share"></i>
+     {  id === 'OrganizasyonSemasi' ? <a href={organizasyonsemasi} target="_blank" >  <p1>Organizasyon Şeması<span>                       <i class="fa fa-share"></i>
  </span> </p1>   </a>:null }
 {  id === 'OrganizasyonSemasi'? null:
 

@@ -12,7 +12,7 @@ class Navigasyonbar extends Component {
       showLinks: false,
       showTanitimList: false,
       showKurumsalList: false,
-      showYonetimList: false,
+      showYonetimList: null,
       showBolumlerList: false,
       showDahiliList: false,
       showCerrahiList: false,
@@ -85,7 +85,7 @@ class Navigasyonbar extends Component {
               </Link>{" "}
               <div
                 className="Links"
-                id={this.state.showLinks ? "hidden" : ""}
+                id={this.state.showLinks ? "hiddenlinks" : ""}
                 onMouseLeave={() => {
                   this.setState({ showLinks: false });
                 }}

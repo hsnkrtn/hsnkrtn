@@ -139,7 +139,8 @@ a:hover {
 }
 .DoktorlarSayfasi ul {
   list-style: none;
-}
+
+} 
 .DoktorlarSayfasi h1 {
   font-size: 18px;
 }
@@ -1459,7 +1460,7 @@ a:hover {
     display: flex;
     justify-content: flex-start;
   }
-  #hidden {
+  #hiddenlinks {
     z-index: 2;
     position: absolute;
     top: 90px;
