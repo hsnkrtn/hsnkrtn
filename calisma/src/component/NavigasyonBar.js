@@ -30,7 +30,7 @@ class Navigasyonbar extends Component {
       CerrahiListesi: [],
       TemelListesi: [],
       DigerTedaviListesi: [],
-
+      CurrentPathname: "",
       BilgiIslemKoordinatorlugu: [],
       Hemsirelik: [],
       Mudurler: [],
@@ -114,15 +114,22 @@ class Navigasyonbar extends Component {
                       <ul>
                         {this.state.TanıtımListesi.map(
                           (TanıtımListesi, index) => {
+                         
+
                             return (
                               <Link
-                                onMouseLeave={() => {
-                                  this.setState({
-                                    ResimlerVeVideolarKey: false,
-                                  });
-                                }}
+                                onMouseEnter={() => {
+                                this.setState({
+                                  CurrentPathname:TanıtımListesi.Path
+                                });
+                                console.log(this.state.CurrentPathname)
+
+                              } 
+                            
+                            
+                            }
                                 to={{
-                                  pathname: `/GenelTanitim/Tanitim/${TanıtımListesi.id} `,
+                                  pathname: `/${this.state.CurrentPathname}/Tanitim/${TanıtımListesi.id} `,
                                   state: {
                                     Gonderilenveriler:
                                       this.state.TanıtımListesi[index],
@@ -184,6 +191,8 @@ class Navigasyonbar extends Component {
                           (KurumsalListesi, index) => {
                             return (
                               <Link
+
+                            
                                 to={{
                                   pathname: `/GenelTanitim/Kurumsal/${KurumsalListesi.id} `,
                                   state: {

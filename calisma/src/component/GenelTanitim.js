@@ -20,19 +20,12 @@ function GenelTanitim(props) {
     <div className="RouterSayfasi">
       <div className="RouterSayfasiIcerik">
         <div className="RouterSayfasiDetay">
-          {id === "ResimlerVeVideolar" ? null : (
             <img className="RouterSayfasiFotograf" src={Gorsel}></img>
-          )}
-          {id === "ResimlerVeVideolar" ? null : (
             <div>
               <h1> {Baslik}</h1>
               <hr></hr>
               <p1> {Detay}</p1>
             </div>
-          )}
-          {id === "ResimlerVeVideolar" ? (
-            <ResimlerSlider Fotograf={Gorsel} Baslik="Hastane" />
-          ) : null}
         </div>
       </div>
     </div>

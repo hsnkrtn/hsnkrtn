@@ -15,6 +15,7 @@ import Covid19 from "./component/Covid19";
 import DoktorlarSayfasi from "./component/DoktorlarSayfasi"; 
 import BolumlerSayfasi from "./component/BolumlerSayfasi"; 
 import EnfeksiyonKomitesi from "./component/EnfeksiyonKomitesi"; 
+import ResimlerVeVideolar from "./component/ResimlerVeVideolar"; 
 import Iletisim from "./component/Iletisim"; 
 
 class App extends Component {
@@ -29,6 +30,9 @@ class App extends Component {
             </Route>
             <Route path="/GenelTanitim/:Id">
               <GenelTanitim />
+            </Route>
+            <Route path="/ResimlerVeVideolar/:Id">
+              <ResimlerVeVideolar />
             </Route>
             <Route path="/Yonetim/:Id">
               <Yonetim/>
