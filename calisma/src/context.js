@@ -180,6 +180,8 @@ export class ContextProvider extends Component {
       ],
       Kurumsal: [
         {
+          Path: "GenelTanitim",
+
           id: "1",
           Adi: "Prof. Dr. FAHRETTİN GÖKTAŞ",
           Baslik: "Rektörümüz ",
@@ -188,6 +190,8 @@ export class ContextProvider extends Component {
             "  tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak tanitim detaylari burada olacak ",
         },
         {
+          Path: "GenelTanitim",
+
           id: "2",
           Baslik: "Misyon Ve Vizyon",
           Gorseller: hstn4,
@@ -195,6 +199,8 @@ export class ContextProvider extends Component {
             "Misyonumuz: İnsanların temel hak ve özgürlükleri arasında yer alan sağlık hizmetlerini; etik ilkeler çerçevesinde, kaliteli, özgün, güvenilir ve evrensel değerler ölçeğinde, bilgi ve beceri ile donatılmış alanında uzman kadromuz ile ileri bilim ve teknoloji kaynaklarını etkin kullanarak nitelikli bir şekilde vermek ve hasta, hasta yakını ve çalışan memnuniyetini en üst seviyeye çıkarmaktır. Vizyonumuz: Kaliteli hizmet anlayışını, güveni, hasta mahremiyetini ve memnuniyetini ilke edinmiş, ileri teknoloji ile donatılmış, çalışanları ile ekip ruhunu oluşturan, kurumsal kimliği ön plana çıkaran, ulusal ve uluslararası alanda tıpta yaşanan gelişmeleri yakından takip eden, araştırmacı ve sorgulayıcı bir anlayışla dünya standartlarında kaliteli sağlık hizmeti sunmak.",
         },
         {
+          Path: "GenelTanitim",
+
           id: "3",
           Baslik: "Değerlerimiz",
 
@@ -203,12 +209,16 @@ export class ContextProvider extends Component {
           Gorseller: hstn4,
         },
         {
+          Path: "GenelTanitim",
+
           id: "4",
           Baslik: "Amaç Ve Hedeflerimiz",
           Detay: "Hazırlanıyor...",
           Gorseller: hstn4,
         },
         {
+          Path: "GenelTanitim",
+
           id: "5",
           Baslik: "Kalite Yönetimi",
           Detay: "Hazırlanıyor...",

@@ -122,7 +122,6 @@ class Navigasyonbar extends Component {
                                 this.setState({
                                   CurrentPathname:TanıtımListesi.Path
                                 });
-                                console.log(this.state.CurrentPathname)
 
                               } 
                             
@@ -192,9 +191,16 @@ class Navigasyonbar extends Component {
                             return (
                               <Link
 
+                              onMouseEnter={() => {
+                                this.setState({
+                                  CurrentPathname:KurumsalListesi.Path
+                                });
+
+                              } }
                             
                                 to={{
-                                  pathname: `/GenelTanitim/Kurumsal/${KurumsalListesi.id} `,
+                                              pathname: `/${this.state.CurrentPathname}/Kurumsal/${KurumsalListesi.id} `,
+
                                   state: {
                                     Gonderilenveriler:
                                       this.state.KurumsalListesi[index],
